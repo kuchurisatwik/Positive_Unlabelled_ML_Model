@@ -16,6 +16,7 @@ import math
 import re
 import socket
 import ssl
+import time
 from dataclasses import dataclass
 from datetime import date, datetime, timezone
 from email.utils import parsedate_to_datetime
@@ -50,6 +51,9 @@ MISSING_NUMERIC = -1
 TEXT_SIMHASH_HAMMING_THRESHOLD = 3
 IMAGE_PHASH_HAMMING_THRESHOLD = 6
 _TLD_EXTRACTOR = tldextract.TLDExtract(cache_dir=None, suffix_list_urls=())
+DEFAULT_DNS_TIMEOUT = 3.0
+DEFAULT_DNS_LIFETIME = 6.0
+DEFAULT_DNS_RETRIES = 1
 
 _BRAND_STOPWORDS = {
     "and", "bank", "co", "com", "corp", "corporate", "gov", "http", "https",
@@ -416,41 +420,79 @@ def _extract_ips(*values: str) -> list[str]:
     return sorted(ips)
 
 
-def lookup_dns(domain: str, hosting_ip: str = "", dns_records: str = "") -> DnsResult:
+def _positive_float(value: float | None, default: float) -> float:
+    try:
+        parsed = float(value) if value is not None else default
+    except (TypeError, ValueError):
+        return default
+    return max(0.1, parsed)
+
+
+def _positive_int(value: int | None, default: int) -> int:
+    try:
+        parsed = int(value) if value is not None else default
+    except (TypeError, ValueError):
+        return default
+    return max(0, parsed)
+
+
+def _contains_timeout(errors: list[str]) -> bool:
+    return any("timeout" in error.lower() for error in errors)
+
+
+def lookup_dns(
+    domain: str,
+    hosting_ip: str = "",
+    dns_records: str = "",
+    timeout: float | None = None,
+    lifetime: float | None = None,
+    retries: int | None = None,
+) -> DnsResult:
     host = normalize_hostname(domain)
     source_ips = _extract_ips(hosting_ip, dns_records)
     aliases: set[str] = set()
     ips: set[str] = set(source_ips)
     dns_errors: list[str] = []
+    timeout = _positive_float(timeout, DEFAULT_DNS_TIMEOUT)
+    lifetime = _positive_float(lifetime, DEFAULT_DNS_LIFETIME)
+    retries = _positive_int(retries, DEFAULT_DNS_RETRIES)
 
     if dns is not None:
-        resolver = dns.resolver.Resolver()
-        resolver.lifetime = 4.0
-        resolver.timeout = 2.0
-        for record_type in ("A", "AAAA"):
-            try:
-                for answer in resolver.resolve(host, record_type):
-                    ips.add(answer.to_text().strip())
-            except Exception as exc:
-                dns_errors.append(f"{record_type}:{type(exc).__name__}")
+        for attempt in range(retries + 1):
+            attempt_errors: list[str] = []
+            resolver = dns.resolver.Resolver()
+            resolver.lifetime = lifetime * (attempt + 1)
+            resolver.timeout = timeout * (attempt + 1)
 
-        cname_target = host
-        seen_cnames: set[str] = set()
-        for _ in range(10):
-            try:
-                answers = resolver.resolve(cname_target, "CNAME")
-            except Exception as exc:
-                dns_errors.append(f"CNAME:{type(exc).__name__}")
+            for record_type in ("A", "AAAA"):
+                try:
+                    for answer in resolver.resolve(host, record_type):
+                        ips.add(answer.to_text().strip())
+                except Exception as exc:
+                    attempt_errors.append(f"{record_type}:{type(exc).__name__}")
+
+            cname_target = host
+            seen_cnames: set[str] = set()
+            for _ in range(10):
+                try:
+                    answers = resolver.resolve(cname_target, "CNAME")
+                except Exception as exc:
+                    attempt_errors.append(f"CNAME:{type(exc).__name__}")
+                    break
+                next_targets = [answer.target.to_text().strip(".").lower() for answer in answers]
+                if not next_targets:
+                    break
+                next_target = next_targets[0]
+                if next_target in seen_cnames:
+                    break
+                seen_cnames.add(next_target)
+                aliases.add(next_target)
+                cname_target = next_target
+
+            dns_errors.extend(attempt_errors)
+            if ips or aliases or not _contains_timeout(attempt_errors) or attempt >= retries:
                 break
-            next_targets = [answer.target.to_text().strip(".").lower() for answer in answers]
-            if not next_targets:
-                break
-            next_target = next_targets[0]
-            if next_target in seen_cnames:
-                break
-            seen_cnames.add(next_target)
-            aliases.add(next_target)
-            cname_target = next_target
+            time.sleep(min(0.2 * (attempt + 1), 1.0))
 
     if not ips:
         try:

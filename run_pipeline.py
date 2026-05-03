@@ -7,7 +7,7 @@ import os
 import re
 import sys
 import time
-from collections import defaultdict
+from collections import Counter, defaultdict
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import dataclass
 from urllib.parse import urlparse
@@ -27,6 +27,9 @@ from extract.feature_extractor import (
     IMAGE_PHASH_AVAILABLE,
     TlsResult,
     UrlContext,
+    DEFAULT_DNS_LIFETIME,
+    DEFAULT_DNS_RETRIES,
+    DEFAULT_DNS_TIMEOUT,
     brand_tokens,
     compute_lexical_features,
     dom_hash,
@@ -77,6 +80,13 @@ def _int_env(name: str, default: int) -> int:
         return default
 
 
+def _nonnegative_int_env(name: str, default: int) -> int:
+    try:
+        return max(0, int(os.environ.get(name, default)))
+    except (TypeError, ValueError):
+        return default
+
+
 def _float_env(name: str, default: float) -> float:
     try:
         return max(0.0, float(os.environ.get(name, default)))
@@ -85,7 +95,7 @@ def _float_env(name: str, default: float) -> float:
 
 
 DEFAULT_IO_CONCURRENCY = _int_env("PIPELINE_CONCURRENCY", 12)
-DNS_CONCURRENCY = _int_env("PIPELINE_DNS_CONCURRENCY", max(64, DEFAULT_IO_CONCURRENCY * 4))
+DNS_CONCURRENCY = _int_env("PIPELINE_DNS_CONCURRENCY", max(32, DEFAULT_IO_CONCURRENCY * 2))
 HTTP_CONCURRENCY = _int_env("PIPELINE_HTTP_CONCURRENCY", DEFAULT_IO_CONCURRENCY)
 RDAP_CONCURRENCY = _int_env("PIPELINE_RDAP_CONCURRENCY", max(20, DEFAULT_IO_CONCURRENCY))
 WHOIS_CONCURRENCY = _int_env("PIPELINE_WHOIS_CONCURRENCY", 2)
@@ -94,6 +104,9 @@ TLS_CONCURRENCY = _int_env("PIPELINE_TLS_CONCURRENCY", max(4, DEFAULT_IO_CONCURR
 ASN_CONCURRENCY = _int_env("PIPELINE_ASN_CONCURRENCY", max(4, DEFAULT_IO_CONCURRENCY // 2))
 THREAD_WORKERS = _int_env("PIPELINE_THREAD_WORKERS", min(4, (os.cpu_count() or 1)))
 HTTP_TIMEOUT = _int_env("PIPELINE_HTTP_TIMEOUT", 10)
+DNS_TIMEOUT = _float_env("PIPELINE_DNS_TIMEOUT", DEFAULT_DNS_TIMEOUT)
+DNS_LIFETIME = _float_env("PIPELINE_DNS_LIFETIME", DEFAULT_DNS_LIFETIME)
+DNS_RETRIES = _nonnegative_int_env("PIPELINE_DNS_RETRIES", DEFAULT_DNS_RETRIES)
 CSE_MATCH_THRESHOLD = _float_env("PIPELINE_CSE_MATCH_THRESHOLD", 0.75)
 REQUIRE_CSE_MATCH = os.environ.get("PIPELINE_REQUIRE_CSE_MATCH", "1").strip().lower() not in {"0", "false", "no"}
 FAVICON_MAX_BYTES = 128_000
@@ -612,6 +625,26 @@ def _dns_failed_row(context: UrlContext, dns_result: DnsResult) -> dict:
     }
 
 
+def _dns_failure_bucket(row: dict) -> str:
+    error = str(row.get("dns_error") or row.get("dns_status") or "unknown")
+    lowered = error.lower()
+    if "nxdomain" in lowered:
+        return "nxdomain"
+    if "timeout" in lowered:
+        return "timeout"
+    if "nonameservers" in lowered:
+        return "no_nameservers"
+    if "noanswer" in lowered:
+        return "no_answer"
+    if "gaierror" in lowered:
+        return "socket_gaierror"
+    return error[:80] or "unknown"
+
+
+def _format_counts(counter: Counter, limit: int = 8) -> str:
+    return "; ".join(f"{name}={count}" for name, count in counter.most_common(limit)) or "none"
+
+
 def prefilter_dns_active_contexts(contexts: list[UrlContext]) -> tuple[list[UrlContext], list[dict]]:
     """Keep DNS-active candidates and write DNS-failed candidates to a review file."""
     if not contexts:
@@ -619,9 +652,23 @@ def prefilter_dns_active_contexts(contexts: list[UrlContext]) -> tuple[list[UrlC
 
     workers = min(DNS_CONCURRENCY, max(1, len(contexts)))
     results: list[tuple[int, UrlContext, DnsResult]] = []
+    log.info(
+        "DNS precheck settings: workers=%d timeout=%.1fs lifetime=%.1fs retries=%d",
+        workers,
+        DNS_TIMEOUT,
+        DNS_LIFETIME,
+        DNS_RETRIES,
+    )
 
     def check(context: UrlContext) -> DnsResult:
-        return lookup_dns(context.detected_domain, context.hosting_ip, context.dns_records)
+        return lookup_dns(
+            context.detected_domain,
+            context.hosting_ip,
+            context.dns_records,
+            timeout=DNS_TIMEOUT,
+            lifetime=DNS_LIFETIME,
+            retries=DNS_RETRIES,
+        )
 
     with ThreadPoolExecutor(max_workers=workers) as executor:
         future_to_item = {
@@ -643,11 +690,27 @@ def prefilter_dns_active_contexts(contexts: list[UrlContext]) -> tuple[list[UrlC
 
     active_contexts: list[UrlContext] = []
     dns_failed_rows: list[dict] = []
+    source_counts: dict[str, Counter] = defaultdict(Counter)
     for _, context, dns_result in sorted(results, key=lambda item: item[0]):
         if int(dns_result.dns_check_pass or 0) == 1:
             active_contexts.append(context)
+            source_counts[context.source_file or "unknown"]["active"] += 1
         else:
-            dns_failed_rows.append(_dns_failed_row(context, dns_result))
+            failed_row = _dns_failed_row(context, dns_result)
+            dns_failed_rows.append(failed_row)
+            source_counts[context.source_file or "unknown"]["skipped"] += 1
+
+    if source_counts:
+        summary = [
+            f"{source}: active={counts.get('active', 0)} skipped={counts.get('skipped', 0)}"
+            for source, counts in sorted(source_counts.items())
+        ]
+        log.info("DNS precheck by source: %s", "; ".join(summary))
+    if dns_failed_rows:
+        bucket_counts = Counter(_dns_failure_bucket(row) for row in dns_failed_rows)
+        exact_counts = Counter(row.get("dns_error") or row.get("dns_status") or "unknown" for row in dns_failed_rows)
+        log.info("DNS precheck failure buckets: %s", _format_counts(bucket_counts))
+        log.info("DNS precheck top errors: %s", _format_counts(exact_counts, limit=5))
 
     return active_contexts, dns_failed_rows
 
@@ -1029,6 +1092,9 @@ class AsyncFeatureCache:
                     context.detected_domain,
                     context.hosting_ip,
                     context.dns_records,
+                    DNS_TIMEOUT,
+                    DNS_LIFETIME,
+                    DNS_RETRIES,
                 )
         except Exception as exc:
             return DnsResult(dns_error=type(exc).__name__, status="error")
@@ -1163,10 +1229,17 @@ async def run_pipeline_async(
 ) -> list[dict]:
     total = len(contexts)
     log.info(
-        "Starting staged v2 pipeline: %d candidates, http=%d dns=%d rdap=%d whois=%d tls=%d threads=%d",
+        (
+            "Starting staged v2 pipeline: %d candidates, http=%d dns=%d "
+            "dns_timeout=%.1fs dns_lifetime=%.1fs dns_retries=%d "
+            "rdap=%d whois=%d tls=%d threads=%d"
+        ),
         total,
         HTTP_CONCURRENCY,
         DNS_CONCURRENCY,
+        DNS_TIMEOUT,
+        DNS_LIFETIME,
+        DNS_RETRIES,
         RDAP_CONCURRENCY,
         WHOIS_CONCURRENCY,
         TLS_CONCURRENCY,

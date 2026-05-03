@@ -416,6 +416,49 @@ class FeatureExtractorV2Tests(unittest.TestCase):
         self.assertEqual(result.cname_exists, 1)
         self.assertEqual(result.cname_chain_length, 1)
 
+    def test_dns_lookup_retries_timeout_before_socket_fallback(self) -> None:
+        class LifetimeTimeout(Exception):
+            pass
+
+        class NoAnswer(Exception):
+            pass
+
+        class FakeAnswer:
+            def __init__(self, value: str) -> None:
+                self.value = value
+                self.target = self
+
+            def to_text(self) -> str:
+                return self.value
+
+        class FakeResolver:
+            a_queries = 0
+
+            def resolve(self, host: str, record_type: str):
+                if record_type == "A":
+                    FakeResolver.a_queries += 1
+                    if FakeResolver.a_queries == 1:
+                        raise LifetimeTimeout()
+                    return [FakeAnswer("203.0.113.10")]
+                raise NoAnswer()
+
+        class FakeDnsResolver:
+            Resolver = FakeResolver
+
+        class FakeDns:
+            resolver = FakeDnsResolver
+
+        previous_dns = feature_module.dns
+        feature_module.dns = FakeDns
+        try:
+            result = lookup_dns("example.com", timeout=0.1, lifetime=0.1, retries=1)
+        finally:
+            feature_module.dns = previous_dns
+
+        self.assertEqual(FakeResolver.a_queries, 2)
+        self.assertEqual(result.dns_check_pass, 1)
+        self.assertIn("203.0.113.10", result.resolved_ips)
+
     def test_ip_seen_with_many_brands_uses_live_resolved_ips(self) -> None:
         rows = [
             {"resolved_ips": "203.0.113.5", "target_brand_domain": "axis.bank.in"},
@@ -461,7 +504,7 @@ class FeatureExtractorV2Tests(unittest.TestCase):
     def test_dns_prefilter_excludes_failed_domains_from_extraction(self) -> None:
         original_lookup_dns = run_pipeline.lookup_dns
 
-        def fake_lookup_dns(domain, hosting_ip="", dns_records=""):
+        def fake_lookup_dns(domain, hosting_ip="", dns_records="", **kwargs):
             if domain == "dead.example":
                 return DnsResult(status="error", dns_error="fixture")
             return DnsResult(status="success", dns_check_pass=1, dns_resolves_to_ip=1, resolved_ips="203.0.113.9")
