@@ -1,0 +1,15 @@
+aiohttp
+beautifulsoup4
+dnspython
+dnstwist
+openpyxl
+pandas
+Pillow
+psutil
+python-Levenshtein
+python-whois
+joblib
+numpy
+scikit-learn
+tldextract
+tqdm

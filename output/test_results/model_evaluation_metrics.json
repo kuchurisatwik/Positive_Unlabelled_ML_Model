@@ -1,0 +1,16 @@
+{
+  "skipped": true,
+  "reason": "No explicit ground-truth label column found.",
+  "candidate_truth_columns": [
+    "ground_truth",
+    "ground_truth_label",
+    "actual_label",
+    "true_label",
+    "manual_label",
+    "test_label",
+    "expected_label",
+    "Phishing/Suspected Domains (i.e. Class Label)",
+    "Class Label",
+    "source_label"
+  ]
+}

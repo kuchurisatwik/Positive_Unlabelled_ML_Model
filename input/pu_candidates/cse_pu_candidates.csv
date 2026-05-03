@@ -1,0 +1,974 @@
+Application_ID,Source of detection,Identified Phishing/Suspected Domain Name,Corresponding CSE Domain Name,Critical Sector Entity Name,Phishing/Suspected Domains (i.e. Class Label),Date of detection (DD-MM-YYYY),Time of detection (HH-MM-SS),Remarks
+,dnstwist_dns_active,http://aims.edu,aiims.edu,All India Institute of Medical Sciences (AIIMS),Unlabeled,03-05-2026,,cse_match_score=0.941176;source_file=dnstwist
+,dnstwist_dns_active,http://aiims-edu.com,aiims.edu,All India Institute of Medical Sciences (AIIMS),Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://abdm.in,abdm.gov.in,National Health Authority (NHA),Unlabeled,03-05-2026,,cse_match_score=1.000000;source_file=dnstwist
+,dnstwist_dns_active,http://airtelpayments.banke.in,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://airtelpayments.banki.in,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://airtelpayments.bankd.in,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://airtelpayments.banka.in,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://airtelpayments.bani.in,airindia.com,Air India,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://airtelpayments.fank.in,airindia.com,Air India,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://airtelpayments.bink.in,airindia.com,Air India,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://airtelpayments.rank.in,airindia.com,Air India,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://airtelpayments.bamk.in,airindia.com,Air India,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://airtelpayments.1bank.in,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://airtelpayments.ibank.in,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://airtelpayments.dark.in,airindia.com,Air India,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://airtelpayments.dank.in,airindia.com,Air India,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://airtelpayments.lbank.in,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://airtelpayments.nank.in,airindia.com,Air India,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://airtelpaymentsbank.in,airindia.com,Air India,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://airtelpayments.bank-in.com,airindia.com,Air India,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://airtelpayments.bonk.in,airindia.com,Air India,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://airtell.in,airtel.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.947368;source_file=dnstwist
+,dnstwist_dns_active,http://airtel3.in,airtel.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.947368;source_file=dnstwist
+,dnstwist_dns_active,http://aartel.in,airtel.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.888889;source_file=dnstwist
+,dnstwist_dns_active,http://airtal.in,airtel.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.888889;source_file=dnstwist
+,dnstwist_dns_active,http://airten.in,airtel.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.888889;source_file=dnstwist
+,dnstwist_dns_active,http://airvel.in,airtel.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.888889;source_file=dnstwist
+,dnstwist_dns_active,http://airel.in,airtel.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.941176;source_file=dnstwist
+,dnstwist_dns_active,http://airtl.in,airtel.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.941176;source_file=dnstwist
+,dnstwist_dns_active,http://aitel.in,airtel.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.941176;source_file=dnstwist
+,dnstwist_dns_active,http://airteel.in,airtel.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.947368;source_file=dnstwist
+,dnstwist_dns_active,http://sirtel.in,airtel.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.888889;source_file=dnstwist
+,dnstwist_dns_active,http://airtrl.in,airtel.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.888889;source_file=dnstwist
+,dnstwist_dns_active,http://aortel.in,airtel.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.888889;source_file=dnstwist
+,dnstwist_dns_active,http://aittel.in,airtel.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.888889;source_file=dnstwist
+,dnstwist_dns_active,http://airtle.in,airtel.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.888889;source_file=dnstwist
+,dnstwist_dns_active,http://aritel.in,airtel.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.888889;source_file=dnstwist
+,dnstwist_dns_active,http://authwebmail.nict.in,accounts.mgovcloud.in,National Informatics Centre (NIC),Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://authwebmail.nice.in,accounts.mgovcloud.in,National Informatics Centre (NIC),Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://authwebmail.nici.in,accounts.mgovcloud.in,National Informatics Centre (NIC),Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://authwebmail.nib.in,authwebmail.nic.in,National Informatics Centre (NIC),Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://authwebmail.nia.in,authwebmail.nic.in,National Informatics Centre (NIC),Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://authwebmail.nmc.in,authwebmail.nic.in,National Informatics Centre (NIC),Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://authwebmail.nyc.in,authwebmail.nic.in,National Informatics Centre (NIC),Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://authwebmail.nle.in,authwebmail.nic.in,National Informatics Centre (NIC),Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://authwebmail.nif.in,authwebmail.nic.in,National Informatics Centre (NIC),Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://authwebmail.nix.in,authwebmail.nic.in,National Informatics Centre (NIC),Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://authwebmail.nci.in,authwebmail.nic.in,National Informatics Centre (NIC),Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://authwebmail.nicin.in,accounts.mgovcloud.in,National Informatics Centre (NIC),Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://axis.banke.in,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://axis.banki.in,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://axis.bankd.in,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://axis.banka.in,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://axis.bani.in,axis.bank.in,Axis Bank,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://axis.fank.in,axis.bank.in,Axis Bank,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://axis.bink.in,axis.bank.in,Axis Bank,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://axis.rank.in,axis.bank.in,Axis Bank,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://axis.bamk.in,axis.bank.in,Axis Bank,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://axis.1bank.in,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://axis.ibank.in,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://axis.dark.in,axis.bank.in,Axis Bank,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://axis.dank.in,axis.bank.in,Axis Bank,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://axis.lbank.in,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://axis.nank.in,axis.bank.in,Axis Bank,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://axis.bank-in.com,axis.bank.in,Axis Bank,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://axis.bonk.in,axis.bank.in,Axis Bank,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://bankofbaroda.banke.in,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://bankofbaroda.banki.in,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://bankofbaroda.bankd.in,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://bankofbaroda.banka.in,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://bankofbaroda.bani.in,bankofbaroda.bank.in,Bank of Baroda,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://bankofbaroda.fank.in,bankofbaroda.bank.in,Bank of Baroda,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://bankofbaroda.bink.in,bankofbaroda.bank.in,Bank of Baroda,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://bankofbaroda.rank.in,bankofbaroda.bank.in,Bank of Baroda,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://bankofbaroda.bamk.in,bankofbaroda.bank.in,Bank of Baroda,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://bankofbaroda.1bank.in,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://bankofbaroda.ibank.in,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://bankofbaroda.dark.in,bankofbaroda.bank.in,Bank of Baroda,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://bankofbaroda.dank.in,bankofbaroda.bank.in,Bank of Baroda,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://bankofbaroda.lbank.in,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://bankofbaroda.nank.in,ana.crsorgi.gov.in,ana crs,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://bankofbaroda.bank-in.com,bankofbaroda.bank.in,Bank of Baroda,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://bankofbaroda.bonk.in,bankofbaroda.bank.in,Bank of Baroda,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://axismfg.com,axismf.com,Axis Bank,Unlabeled,03-05-2026,,cse_match_score=0.952381;source_file=dnstwist
+,dnstwist_dns_active,http://axismff.com,axismf.com,Axis Bank,Unlabeled,03-05-2026,,cse_match_score=0.952381;source_file=dnstwist
+,dnstwist_dns_active,http://axisif.com,axismf.com,Axis Bank,Unlabeled,03-05-2026,,cse_match_score=0.900000;source_file=dnstwist
+,dnstwist_dns_active,http://axismd.com,axismf.com,Axis Bank,Unlabeled,03-05-2026,,cse_match_score=0.900000;source_file=dnstwist
+,dnstwist_dns_active,http://axismv.com,axismf.com,Axis Bank,Unlabeled,03-05-2026,,cse_match_score=0.900000;source_file=dnstwist
+,dnstwist_dns_active,http://axis-f.com,axismf.com,Axis Bank,Unlabeled,03-05-2026,,cse_match_score=0.909091;source_file=dnstwist
+,dnstwist_dns_active,http://axismb.com,axismf.com,Axis Bank,Unlabeled,03-05-2026,,cse_match_score=0.900000;source_file=dnstwist
+,dnstwist_dns_active,http://axismg.com,axismf.com,Axis Bank,Unlabeled,03-05-2026,,cse_match_score=0.900000;source_file=dnstwist
+,dnstwist_dns_active,http://axis-mf.com,axismf.com,Axis Bank,Unlabeled,03-05-2026,,cse_match_score=1.000000;source_file=dnstwist
+,dnstwist_dns_active,http://aismf.com,axismf.com,Axis Bank,Unlabeled,03-05-2026,,cse_match_score=0.947368;source_file=dnstwist
+,dnstwist_dns_active,http://axisf.com,axismf.com,Axis Bank,Unlabeled,03-05-2026,,cse_match_score=0.947368;source_file=dnstwist
+,dnstwist_dns_active,http://axism.com,axismf.com,Axis Bank,Unlabeled,03-05-2026,,cse_match_score=0.947368;source_file=dnstwist
+,dnstwist_dns_active,http://axismt.com,axismf.com,Axis Bank,Unlabeled,03-05-2026,,cse_match_score=0.900000;source_file=dnstwist
+,dnstwist_dns_active,http://axismr.com,axismf.com,Axis Bank,Unlabeled,03-05-2026,,cse_match_score=0.900000;source_file=dnstwist
+,dnstwist_dns_active,http://asismf.com,axismf.com,Axis Bank,Unlabeled,03-05-2026,,cse_match_score=0.900000;source_file=dnstwist
+,dnstwist_dns_active,http://axi.smf.com,sbimf.com,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.875000;source_file=dnstwist
+,dnstwist_dns_active,http://axisfm.com,axismf.com,Axis Bank,Unlabeled,03-05-2026,,cse_match_score=0.900000;source_file=dnstwist
+,dnstwist_dns_active,http://airindian.com,airindia.com,Air India,Unlabeled,03-05-2026,,cse_match_score=0.960000;source_file=dnstwist
+,dnstwist_dns_active,http://airindiae.com,airindia.com,Air India,Unlabeled,03-05-2026,,cse_match_score=0.960000;source_file=dnstwist
+,dnstwist_dns_active,http://airindiaa.com,airindia.com,Air India,Unlabeled,03-05-2026,,cse_match_score=0.960000;source_file=dnstwist
+,dnstwist_dns_active,http://aibindia.com,airindia.com,Air India,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://aipindia.com,airindia.com,Air India,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://aarindia.com,airindia.com,Air India,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://akrindia.com,airindia.com,Air India,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://ahrindia.com,airindia.com,Air India,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://aivindia.com,airindia.com,Air India,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://airandia.com,airindia.com,Air India,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://airineia.com,airindia.com,Air India,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://airinfia.com,airindia.com,Air India,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://cirindia.com,airindia.com,Air India,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://ayrindia.com,airindia.com,Air India,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://amrindia.com,airindia.com,Air India,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://airlndla.com,airindia.com,Air India,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://airimdia.com,airindia.com,Air India,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://airindiia.com,airindia.com,Air India,Unlabeled,03-05-2026,,cse_match_score=0.960000;source_file=dnstwist
+,dnstwist_dns_active,http://airinndia.com,airindia.com,Air India,Unlabeled,03-05-2026,,cse_match_score=0.960000;source_file=dnstwist
+,dnstwist_dns_active,http://airlndia.com,airindia.com,Air India,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://air-india.com,airindia.com,Air India,Unlabeled,03-05-2026,,cse_match_score=1.000000;source_file=dnstwist
+,dnstwist_dns_active,http://airfindia.com,airindia.com,Air India,Unlabeled,03-05-2026,,cse_match_score=0.960000;source_file=dnstwist
+,dnstwist_dns_active,http://aireindia.com,airindia.com,Air India,Unlabeled,03-05-2026,,cse_match_score=0.960000;source_file=dnstwist
+,dnstwist_dns_active,http://aierindia.com,airindia.com,Air India,Unlabeled,03-05-2026,,cse_match_score=0.960000;source_file=dnstwist
+,dnstwist_dns_active,http://airdindia.com,airindia.com,Air India,Unlabeled,03-05-2026,,cse_match_score=0.960000;source_file=dnstwist
+,dnstwist_dns_active,http://airindioa.com,airindia.com,Air India,Unlabeled,03-05-2026,,cse_match_score=0.960000;source_file=dnstwist
+,dnstwist_dns_active,http://airindiua.com,airindia.com,Air India,Unlabeled,03-05-2026,,cse_match_score=0.960000;source_file=dnstwist
+,dnstwist_dns_active,http://airindoia.com,airindia.com,Air India,Unlabeled,03-05-2026,,cse_match_score=0.960000;source_file=dnstwist
+,dnstwist_dns_active,http://aitrindia.com,airindia.com,Air India,Unlabeled,03-05-2026,,cse_match_score=0.960000;source_file=dnstwist
+,dnstwist_dns_active,http://sairindia.com,airindia.com,Air India,Unlabeled,03-05-2026,,cse_match_score=0.960000;source_file=dnstwist
+,dnstwist_dns_active,http://airoindia.com,airindia.com,Air India,Unlabeled,03-05-2026,,cse_match_score=0.960000;source_file=dnstwist
+,dnstwist_dns_active,http://airndia.com,airindia.com,Air India,Unlabeled,03-05-2026,,cse_match_score=0.956522;source_file=dnstwist
+,dnstwist_dns_active,http://airinia.com,airindia.com,Air India,Unlabeled,03-05-2026,,cse_match_score=0.956522;source_file=dnstwist
+,dnstwist_dns_active,http://aiindia.com,airindia.com,Air India,Unlabeled,03-05-2026,,cse_match_score=0.956522;source_file=dnstwist
+,dnstwist_dns_active,http://airinda.com,airindia.com,Air India,Unlabeled,03-05-2026,,cse_match_score=0.956522;source_file=dnstwist
+,dnstwist_dns_active,http://airindi.com,airindia.com,Air India,Unlabeled,03-05-2026,,cse_match_score=0.956522;source_file=dnstwist
+,dnstwist_dns_active,http://arindia.com,airindia.com,Air India,Unlabeled,03-05-2026,,cse_match_score=0.956522;source_file=dnstwist
+,dnstwist_dns_active,http://airidia.com,airindia.com,Air India,Unlabeled,03-05-2026,,cse_match_score=0.956522;source_file=dnstwist
+,dnstwist_dns_active,http://irindia.com,airindia.com,Air India,Unlabeled,03-05-2026,,cse_match_score=0.956522;source_file=dnstwist
+,dnstwist_dns_active,http://aairindia.com,airindia.com,Air India,Unlabeled,03-05-2026,,cse_match_score=0.960000;source_file=dnstwist
+,dnstwist_dns_active,http://aiirindia.com,airindia.com,Air India,Unlabeled,03-05-2026,,cse_match_score=0.960000;source_file=dnstwist
+,dnstwist_dns_active,http://airiindia.com,airindia.com,Air India,Unlabeled,03-05-2026,,cse_match_score=0.960000;source_file=dnstwist
+,dnstwist_dns_active,http://airinddia.com,airindia.com,Air India,Unlabeled,03-05-2026,,cse_match_score=0.960000;source_file=dnstwist
+,dnstwist_dns_active,http://airrindia.com,airindia.com,Air India,Unlabeled,03-05-2026,,cse_match_score=0.960000;source_file=dnstwist
+,dnstwist_dns_active,http://aifindia.com,airindia.com,Air India,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://sirindia.com,airindia.com,Air India,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://aitindia.com,airindia.com,Air India,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://airindja.com,airindia.com,Air India,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://aurindia.com,airindia.com,Air India,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://ai4india.com,airindia.com,Air India,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://aidindia.com,airindia.com,Air India,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://airindoa.com,airindia.com,Air India,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://airindua.com,airindia.com,Air India,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://airinsia.com,airindia.com,Air India,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://airundia.com,airindia.com,Air India,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://aieindia.com,airindia.com,Air India,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://ai.rindia.com,airindia.com,Air India,Unlabeled,03-05-2026,,cse_match_score=0.909091;source_file=dnstwist
+,dnstwist_dns_active,http://airind.ia.com,airindia.com,Air India,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://airinida.com,airindia.com,Air India,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://aiirndia.com,airindia.com,Air India,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://airidnia.com,airindia.com,Air India,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://airnidia.com,airindia.com,Air India,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://ariindia.com,airindia.com,Air India,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://iarindia.com,airindia.com,Air India,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://airindai.com,airindia.com,Air India,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://aerindia.com,airindia.com,Air India,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://fsnl.co.in,bsnl.co.in,Bharat Sanchar Nigam Limited (BSNL),Unlabeled,03-05-2026,,cse_match_score=0.900000;source_file=dnstwist
+,dnstwist_dns_active,http://rsnl.co.in,bsnl.co.in,Bharat Sanchar Nigam Limited (BSNL),Unlabeled,03-05-2026,,cse_match_score=0.900000;source_file=dnstwist
+,dnstwist_dns_active,http://dsnl.co.in,bsnl.co.in,Bharat Sanchar Nigam Limited (BSNL),Unlabeled,03-05-2026,,cse_match_score=0.900000;source_file=dnstwist
+,dnstwist_dns_active,http://bsrl.co.in,bsnl.co.in,Bharat Sanchar Nigam Limited (BSNL),Unlabeled,03-05-2026,,cse_match_score=0.900000;source_file=dnstwist
+,dnstwist_dns_active,http://bsl.co.in,bsnl.co.in,Bharat Sanchar Nigam Limited (BSNL),Unlabeled,03-05-2026,,cse_match_score=0.947368;source_file=dnstwist
+,dnstwist_dns_active,http://snl.co.in,bsnl.co.in,Bharat Sanchar Nigam Limited (BSNL),Unlabeled,03-05-2026,,cse_match_score=0.947368;source_file=dnstwist
+,dnstwist_dns_active,http://bnl.co.in,bsnl.co.in,Bharat Sanchar Nigam Limited (BSNL),Unlabeled,03-05-2026,,cse_match_score=0.947368;source_file=dnstwist
+,dnstwist_dns_active,http://vsnl.co.in,bsnl.co.in,Bharat Sanchar Nigam Limited (BSNL),Unlabeled,03-05-2026,,cse_match_score=0.900000;source_file=dnstwist
+,dnstwist_dns_active,http://bsbl.co.in,bsnl.co.in,Bharat Sanchar Nigam Limited (BSNL),Unlabeled,03-05-2026,,cse_match_score=0.900000;source_file=dnstwist
+,dnstwist_dns_active,http://banl.co.in,bsnl.co.in,Bharat Sanchar Nigam Limited (BSNL),Unlabeled,03-05-2026,,cse_match_score=0.900000;source_file=dnstwist
+,dnstwist_dns_active,http://b.snl.co.in,bsnl.co.in,Bharat Sanchar Nigam Limited (BSNL),Unlabeled,03-05-2026,,cse_match_score=0.947368;source_file=dnstwist
+,dnstwist_dns_active,http://sbnl.co.in,bsnl.co.in,Bharat Sanchar Nigam Limited (BSNL),Unlabeled,03-05-2026,,cse_match_score=0.900000;source_file=dnstwist
+,dnstwist_dns_active,http://bsnl.in,bsnl.co.in,Bharat Sanchar Nigam Limited (BSNL),Unlabeled,03-05-2026,,cse_match_score=1.000000;source_file=dnstwist
+,dnstwist_dns_active,http://bsnlco.in,bsnl.co.in,Bharat Sanchar Nigam Limited (BSNL),Unlabeled,03-05-2026,,cse_match_score=0.947368;source_file=dnstwist
+,dnstwist_dns_active,http://axismaxlifes.com,axismaxlife.com,Axis Bank,Unlabeled,03-05-2026,,cse_match_score=0.967742;source_file=dnstwist
+,dnstwist_dns_active,http://xn--axsmaxlife-97a.com,axismaxlife.com,Axis Bank,Unlabeled,03-05-2026,,cse_match_score=0.769231;source_file=dnstwist
+,dnstwist_dns_active,http://axisrnaxlife.com,axismaxlife.com,Axis Bank,Unlabeled,03-05-2026,,cse_match_score=0.903226;source_file=dnstwist
+,dnstwist_dns_active,http://axis-maxlife.com,axismaxlife.com,Axis Bank,Unlabeled,03-05-2026,,cse_match_score=1.000000;source_file=dnstwist
+,dnstwist_dns_active,http://axismaxife.com,axismaxlife.com,Axis Bank,Unlabeled,03-05-2026,,cse_match_score=0.965517;source_file=dnstwist
+,dnstwist_dns_active,http://axism.axlife.com,axis.bank.in,Axis Bank,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://canarabank.banke.in,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://canarabank.banki.in,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://canarabank.bankd.in,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://canarabank.banka.in,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://canarabank.bani.in,ana.crsorgi.gov.in,ana crs,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://canarabank.fank.in,ana.crsorgi.gov.in,ana crs,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://canarabank.bink.in,ana.crsorgi.gov.in,ana crs,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://canarabank.rank.in,ana.crsorgi.gov.in,ana crs,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://canarabank.bamk.in,ana.crsorgi.gov.in,ana crs,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://canarabank.1bank.in,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://canarabank.ibank.in,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://canarabank.dark.in,ana.crsorgi.gov.in,ana crs,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://canarabank.dank.in,ana.crsorgi.gov.in,ana crs,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://canarabank.lbank.in,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://canarabank.nank.in,ana.crsorgi.gov.in,ana crs,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://canarabank.bank-in.com,ana.crsorgi.gov.in,ana crs,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://canarabank.bonk.in,ana.crsorgi.gov.in,ana crs,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://bsgindia.com,bseindia.com,BSE Ltd.,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://jseindia.com,bseindia.com,BSE Ltd.,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://bsuindia.com,bseindia.com,BSE Ltd.,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://bceindia.com,bseindia.com,BSE Ltd.,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://rseindia.com,bseindia.com,BSE Ltd.,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://cseindia.com,bseindia.com,BSE Ltd.,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://bsaindia.com,bseindia.com,BSE Ltd.,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://bsmindia.com,bseindia.com,BSE Ltd.,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://breindia.com,bseindia.com,BSE Ltd.,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://bweindia.com,bseindia.com,BSE Ltd.,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://fseindia.com,bseindia.com,BSE Ltd.,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://bscindia.com,bseindia.com,BSE Ltd.,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://dseindia.com,bseindia.com,BSE Ltd.,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://bseindla.com,bseindia.com,BSE Ltd.,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://xn--bsendia-1ya.com,bseindia.com,BSE Ltd.,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://xn--bsendia-tfb.com,bseindia.com,BSE Ltd.,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://bseindiia.com,bseindia.com,BSE Ltd.,Unlabeled,03-05-2026,,cse_match_score=0.960000;source_file=dnstwist
+,dnstwist_dns_active,http://dscindia.com,bseindia.com,BSE Ltd.,Unlabeled,03-05-2026,,cse_match_score=0.833333;source_file=dnstwist
+,dnstwist_dns_active,http://bse-india.com,bseindia.com,BSE Ltd.,Unlabeled,03-05-2026,,cse_match_score=1.000000;source_file=dnstwist
+,dnstwist_dns_active,http://baseindia.com,bseindia.com,BSE Ltd.,Unlabeled,03-05-2026,,cse_match_score=0.960000;source_file=dnstwist
+,dnstwist_dns_active,http://nbseindia.com,bseindia.com,BSE Ltd.,Unlabeled,03-05-2026,,cse_match_score=0.960000;source_file=dnstwist
+,dnstwist_dns_active,http://bsesindia.com,bseindia.com,BSE Ltd.,Unlabeled,03-05-2026,,cse_match_score=0.960000;source_file=dnstwist
+,dnstwist_dns_active,http://bsindia.com,bseindia.com,BSE Ltd.,Unlabeled,03-05-2026,,cse_match_score=0.956522;source_file=dnstwist
+,dnstwist_dns_active,http://seindia.com,bseindia.com,BSE Ltd.,Unlabeled,03-05-2026,,cse_match_score=0.956522;source_file=dnstwist
+,dnstwist_dns_active,http://beindia.com,bseindia.com,BSE Ltd.,Unlabeled,03-05-2026,,cse_match_score=0.956522;source_file=dnstwist
+,dnstwist_dns_active,http://vseindia.com,bseindia.com,BSE Ltd.,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://bssindia.com,bseindia.com,BSE Ltd.,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://bsrindia.com,bseindia.com,BSE Ltd.,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://beeindia.com,bseindia.com,BSE Ltd.,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://gseindia.com,bseindia.com,BSE Ltd.,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://hseindia.com,bseindia.com,BSE Ltd.,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://nseindia.com,bseindia.com,BSE Ltd.,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://bzeindia.com,bseindia.com,BSE Ltd.,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://b.seindia.com,bseindia.com,BSE Ltd.,Unlabeled,03-05-2026,,cse_match_score=0.956522;source_file=dnstwist
+,dnstwist_dns_active,http://bs.eindia.com,bseindia.com,BSE Ltd.,Unlabeled,03-05-2026,,cse_match_score=0.909091;source_file=dnstwist
+,dnstwist_dns_active,http://bseind.ia.com,bseindia.com,BSE Ltd.,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://bseinida.com,bseindia.com,BSE Ltd.,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://besindia.com,bseindia.com,BSE Ltd.,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://bsiindia.com,bseindia.com,BSE Ltd.,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://caisonline.com,camsonline.com,Computer Age Management Services Ltd. (CAMS),Unlabeled,03-05-2026,,cse_match_score=0.928571;source_file=dnstwist
+,dnstwist_dns_active,http://caesonline.com,camsonline.com,Computer Age Management Services Ltd. (CAMS),Unlabeled,03-05-2026,,cse_match_score=0.928571;source_file=dnstwist
+,dnstwist_dns_active,http://ccmsonline.com,camsonline.com,Computer Age Management Services Ltd. (CAMS),Unlabeled,03-05-2026,,cse_match_score=0.928571;source_file=dnstwist
+,dnstwist_dns_active,http://cimsonline.com,camsonline.com,Computer Age Management Services Ltd. (CAMS),Unlabeled,03-05-2026,,cse_match_score=0.928571;source_file=dnstwist
+,dnstwist_dns_active,http://gamsonline.com,camsonline.com,Computer Age Management Services Ltd. (CAMS),Unlabeled,03-05-2026,,cse_match_score=0.928571;source_file=dnstwist
+,dnstwist_dns_active,http://samsonline.com,camsonline.com,Computer Age Management Services Ltd. (CAMS),Unlabeled,03-05-2026,,cse_match_score=0.928571;source_file=dnstwist
+,dnstwist_dns_active,http://kamsonline.com,camsonline.com,Computer Age Management Services Ltd. (CAMS),Unlabeled,03-05-2026,,cse_match_score=0.928571;source_file=dnstwist
+,dnstwist_dns_active,http://bamsonline.com,camsonline.com,Computer Age Management Services Ltd. (CAMS),Unlabeled,03-05-2026,,cse_match_score=0.928571;source_file=dnstwist
+,dnstwist_dns_active,http://camconline.com,camsonline.com,Computer Age Management Services Ltd. (CAMS),Unlabeled,03-05-2026,,cse_match_score=0.928571;source_file=dnstwist
+,dnstwist_dns_active,http://cemsonline.com,camsonline.com,Computer Age Management Services Ltd. (CAMS),Unlabeled,03-05-2026,,cse_match_score=0.928571;source_file=dnstwist
+,dnstwist_dns_active,http://caosonline.com,camsonline.com,Computer Age Management Services Ltd. (CAMS),Unlabeled,03-05-2026,,cse_match_score=0.928571;source_file=dnstwist
+,dnstwist_dns_active,http://carrsonline.com,camsonline.com,Computer Age Management Services Ltd. (CAMS),Unlabeled,03-05-2026,,cse_match_score=0.896552;source_file=dnstwist
+,dnstwist_dns_active,http://eamsonline.com,camsonline.com,Computer Age Management Services Ltd. (CAMS),Unlabeled,03-05-2026,,cse_match_score=0.928571;source_file=dnstwist
+,dnstwist_dns_active,http://cansonline.com,camsonline.com,Computer Age Management Services Ltd. (CAMS),Unlabeled,03-05-2026,,cse_match_score=0.928571;source_file=dnstwist
+,dnstwist_dns_active,http://earnsonline.com,camsonline.com,Computer Age Management Services Ltd. (CAMS),Unlabeled,03-05-2026,,cse_match_score=0.827586;source_file=dnstwist
+,dnstwist_dns_active,http://camsonilne.com,camsonline.com,Computer Age Management Services Ltd. (CAMS),Unlabeled,03-05-2026,,cse_match_score=0.928571;source_file=dnstwist
+,dnstwist_dns_active,http://carsonline.com,camsonline.com,Computer Age Management Services Ltd. (CAMS),Unlabeled,03-05-2026,,cse_match_score=0.928571;source_file=dnstwist
+,dnstwist_dns_active,http://camasonline.com,camsonline.com,Computer Age Management Services Ltd. (CAMS),Unlabeled,03-05-2026,,cse_match_score=0.965517;source_file=dnstwist
+,dnstwist_dns_active,http://campsonline.com,camsonline.com,Computer Age Management Services Ltd. (CAMS),Unlabeled,03-05-2026,,cse_match_score=0.965517;source_file=dnstwist
+,dnstwist_dns_active,http://camonline.com,camsonline.com,Computer Age Management Services Ltd. (CAMS),Unlabeled,03-05-2026,,cse_match_score=0.962963;source_file=dnstwist
+,dnstwist_dns_active,http://amsonline.com,camsonline.com,Computer Age Management Services Ltd. (CAMS),Unlabeled,03-05-2026,,cse_match_score=0.962963;source_file=dnstwist
+,dnstwist_dns_active,http://cmsonline.com,camsonline.com,Computer Age Management Services Ltd. (CAMS),Unlabeled,03-05-2026,,cse_match_score=0.962963;source_file=dnstwist
+,dnstwist_dns_active,http://casonline.com,camsonline.com,Computer Age Management Services Ltd. (CAMS),Unlabeled,03-05-2026,,cse_match_score=0.962963;source_file=dnstwist
+,dnstwist_dns_active,http://camyonline.com,camsonline.com,Computer Age Management Services Ltd. (CAMS),Unlabeled,03-05-2026,,cse_match_score=0.928571;source_file=dnstwist
+,dnstwist_dns_active,http://csmsonline.com,camsonline.com,Computer Age Management Services Ltd. (CAMS),Unlabeled,03-05-2026,,cse_match_score=0.928571;source_file=dnstwist
+,dnstwist_dns_active,http://camaonline.com,camsonline.com,Computer Age Management Services Ltd. (CAMS),Unlabeled,03-05-2026,,cse_match_score=0.928571;source_file=dnstwist
+,dnstwist_dns_active,http://capsonline.com,camsonline.com,Computer Age Management Services Ltd. (CAMS),Unlabeled,03-05-2026,,cse_match_score=0.928571;source_file=dnstwist
+,dnstwist_dns_active,http://famsonline.com,camsonline.com,Computer Age Management Services Ltd. (CAMS),Unlabeled,03-05-2026,,cse_match_score=0.928571;source_file=dnstwist
+,dnstwist_dns_active,http://cameonline.com,camsonline.com,Computer Age Management Services Ltd. (CAMS),Unlabeled,03-05-2026,,cse_match_score=0.928571;source_file=dnstwist
+,dnstwist_dns_active,http://cam.sonline.com,camsonline.com,Computer Age Management Services Ltd. (CAMS),Unlabeled,03-05-2026,,cse_match_score=0.880000;source_file=dnstwist
+,dnstwist_dns_active,http://camso.nline.com,camsonline.com,Computer Age Management Services Ltd. (CAMS),Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://c.amsonline.com,camsonline.com,Computer Age Management Services Ltd. (CAMS),Unlabeled,03-05-2026,,cse_match_score=0.962963;source_file=dnstwist
+,dnstwist_dns_active,http://comsonline.com,camsonline.com,Computer Age Management Services Ltd. (CAMS),Unlabeled,03-05-2026,,cse_match_score=0.928571;source_file=dnstwist
+,dnstwist_dns_active,http://cloud.in,cloud.gov.in,National Informatics Centre (NIC),Unlabeled,03-05-2026,,cse_match_score=1.000000;source_file=dnstwist
+,dnstwist_dns_active,http://coalindiatenders.nict.in,accounts.mgovcloud.in,National Informatics Centre (NIC),Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://coalindiatenders.nice.in,accounts.mgovcloud.in,National Informatics Centre (NIC),Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://coalindiatenders.nici.in,accounts.mgovcloud.in,National Informatics Centre (NIC),Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://coalindiatenders.nib.in,coalindia.in,Coal India,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://coalindiatenders.nia.in,coalindia.in,Coal India,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://coalindiatenders.nmc.in,coalindia.in,Coal India,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://coalindiatenders.nyc.in,coalindia.in,Coal India,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://coalindiatenders.nle.in,coalindia.in,Coal India,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://coalindiatenders.nif.in,coalindia.in,Coal India,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://coalindiatenders.nix.in,coalindia.in,Coal India,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://coalindiatenders.nci.in,coalindia.in,Coal India,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://coalindiatenders.nicin.in,accounts.mgovcloud.in,National Informatics Centre (NIC),Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://kanarabank.com,canarabank.com,Canara Bank,Unlabeled,03-05-2026,,cse_match_score=0.928571;source_file=dnstwist
+,dnstwist_dns_active,http://canaribank.com,canarabank.com,Canara Bank,Unlabeled,03-05-2026,,cse_match_score=0.928571;source_file=dnstwist
+,dnstwist_dns_active,http://xn--canaraank-v2d.com,ana.crsorgi.gov.in,ana crs,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://camarabank.com,canarabank.com,Canara Bank,Unlabeled,03-05-2026,,cse_match_score=0.928571;source_file=dnstwist
+,dnstwist_dns_active,http://cannarabank.com,canarabank.com,Canara Bank,Unlabeled,03-05-2026,,cse_match_score=0.965517;source_file=dnstwist
+,dnstwist_dns_active,http://canara-bank.com,canarabank.com,Canara Bank,Unlabeled,03-05-2026,,cse_match_score=1.000000;source_file=dnstwist
+,dnstwist_dns_active,http://canarasbank.com,canarabank.com,Canara Bank,Unlabeled,03-05-2026,,cse_match_score=0.965517;source_file=dnstwist
+,dnstwist_dns_active,http://canarbank.com,canarabank.com,Canara Bank,Unlabeled,03-05-2026,,cse_match_score=0.962963;source_file=dnstwist
+,dnstwist_dns_active,http://canrabank.com,canarabank.com,Canara Bank,Unlabeled,03-05-2026,,cse_match_score=0.962963;source_file=dnstwist
+,dnstwist_dns_active,http://canaabank.com,canarabank.com,Canara Bank,Unlabeled,03-05-2026,,cse_match_score=0.962963;source_file=dnstwist
+,dnstwist_dns_active,http://canarabak.com,canarabank.com,Canara Bank,Unlabeled,03-05-2026,,cse_match_score=0.962963;source_file=dnstwist
+,dnstwist_dns_active,http://canarrabank.com,canarabank.com,Canara Bank,Unlabeled,03-05-2026,,cse_match_score=0.965517;source_file=dnstwist
+,dnstwist_dns_active,http://canaraabank.com,canarabank.com,Canara Bank,Unlabeled,03-05-2026,,cse_match_score=0.965517;source_file=dnstwist
+,dnstwist_dns_active,http://canadabank.com,canarabank.com,Canara Bank,Unlabeled,03-05-2026,,cse_match_score=0.928571;source_file=dnstwist
+,dnstwist_dns_active,http://canarybank.com,canarabank.com,Canara Bank,Unlabeled,03-05-2026,,cse_match_score=0.928571;source_file=dnstwist
+,dnstwist_dns_active,http://ca.narabank.com,canarabank.com,Canara Bank,Unlabeled,03-05-2026,,cse_match_score=0.923077;source_file=dnstwist
+,dnstwist_dns_active,http://cana.rabank.com,ana.crsorgi.gov.in,ana crs,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://goalindia.in,coalindia.in,Coal India,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://calindia.in,coalindia.in,Coal India,Unlabeled,03-05-2026,,cse_match_score=0.956522;source_file=dnstwist
+,dnstwist_dns_active,http://coalin.dia.in,coalindia.in,Coal India,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://cci.gov.in,eci.gov.in,Election Commision of India (ECI),Unlabeled,03-05-2026,,cse_match_score=0.900000;source_file=dnstwist
+,dnstwist_dns_active,http://sci.gov.in,eci.gov.in,Election Commision of India (ECI),Unlabeled,03-05-2026,,cse_match_score=0.900000;source_file=dnstwist
+,dnstwist_dns_active,http://eci.in,eci.gov.in,Election Commision of India (ECI),Unlabeled,03-05-2026,,cse_match_score=1.000000;source_file=dnstwist
+,dnstwist_dns_active,http://hdfc.banke.in,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://hdfc.banki.in,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://hdfc.bankd.in,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://hdfc.banka.in,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://hdfc.bani.in,hdfc.bank.in,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://hdfc.fank.in,hdfc.bank.in,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://hdfc.bink.in,hdfc.bank.in,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://hdfc.rank.in,hdfc.bank.in,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://hdfc.bamk.in,hdfc.bank.in,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://hdfc.1bank.in,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://hdfc.ibank.in,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://hdfc.dark.in,hdfc.bank.in,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://hdfc.dank.in,hdfc.bank.in,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://hdfc.lbank.in,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://hdfc.nank.in,hdfc.bank.in,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://hdfcbank.in,netbanking.hdfcbank.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=1.000000;source_file=dnstwist
+,dnstwist_dns_active,http://hdfc.bank-in.com,hdfc.bank.in,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://hdfc.bonk.in,hdfc.bank.in,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://hdfcd.com,hdfc.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.941176;source_file=dnstwist
+,dnstwist_dns_active,http://hdfcq.com,hdfc.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.941176;source_file=dnstwist
+,dnstwist_dns_active,http://hdfcm.com,hdfc.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.941176;source_file=dnstwist
+,dnstwist_dns_active,http://hdfcs.com,hdfc.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.941176;source_file=dnstwist
+,dnstwist_dns_active,http://hdfca.com,hdfc.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.941176;source_file=dnstwist
+,dnstwist_dns_active,http://hdfco.com,hdfc.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.941176;source_file=dnstwist
+,dnstwist_dns_active,http://hdfc1.com,hdfc.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.941176;source_file=dnstwist
+,dnstwist_dns_active,http://hdfcc.com,hdfc.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.941176;source_file=dnstwist
+,dnstwist_dns_active,http://hdfcb.com,hdfc.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.941176;source_file=dnstwist
+,dnstwist_dns_active,http://hdfci.com,hdfc.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.941176;source_file=dnstwist
+,dnstwist_dns_active,http://hddc.com,hdfc.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.875000;source_file=dnstwist
+,dnstwist_dns_active,http://hdfk.com,hdfc.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.875000;source_file=dnstwist
+,dnstwist_dns_active,http://hefc.com,hdfc.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.875000;source_file=dnstwist
+,dnstwist_dns_active,http://ldfc.com,hdfc.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.875000;source_file=dnstwist
+,dnstwist_dns_active,http://xdfc.com,hdfc.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.875000;source_file=dnstwist
+,dnstwist_dns_active,http://hdfs.com,hdfc.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.875000;source_file=dnstwist
+,dnstwist_dns_active,http://hdfg.com,hdfc.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.875000;source_file=dnstwist
+,dnstwist_dns_active,http://hdnc.com,hdfc.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.875000;source_file=dnstwist
+,dnstwist_dns_active,http://hlfc.com,hdfc.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.875000;source_file=dnstwist
+,dnstwist_dns_active,http://hdgc.com,hdfc.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.875000;source_file=dnstwist
+,dnstwist_dns_active,http://hdfb.com,hdfc.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.875000;source_file=dnstwist
+,dnstwist_dns_active,http://hdvc.com,hdfc.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.875000;source_file=dnstwist
+,dnstwist_dns_active,http://hffc.com,hdfc.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.875000;source_file=dnstwist
+,dnstwist_dns_active,http://hdfa.com,hdfc.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.875000;source_file=dnstwist
+,dnstwist_dns_active,http://htfc.com,hdfc.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.875000;source_file=dnstwist
+,dnstwist_dns_active,http://hdbc.com,hdfc.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.875000;source_file=dnstwist
+,dnstwist_dns_active,http://hcifc.com,hdfc.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.823529;source_file=dnstwist
+,dnstwist_dns_active,http://lhdfc.com,hdfc.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.941176;source_file=dnstwist
+,dnstwist_dns_active,http://ihdfc.com,hdfc.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.941176;source_file=dnstwist
+,dnstwist_dns_active,http://hbfe.com,hdfc.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.750000;source_file=dnstwist
+,dnstwist_dns_active,http://hdfe.com,hdfc.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.875000;source_file=dnstwist
+,dnstwist_dns_active,http://helfc.com,hdfc.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.823529;source_file=dnstwist
+,dnstwist_dns_active,http://hdifc.com,hdfc.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.941176;source_file=dnstwist
+,dnstwist_dns_active,http://hbfc.com,hdfc.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.875000;source_file=dnstwist
+,dnstwist_dns_active,http://hdlfc.com,hdfc.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.941176;source_file=dnstwist
+,dnstwist_dns_active,http://hdf-c.com,hdfc.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=1.000000;source_file=dnstwist
+,dnstwist_dns_active,http://hxdfc.com,hdfc.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.941176;source_file=dnstwist
+,dnstwist_dns_active,http://hsdfc.com,hdfc.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.941176;source_file=dnstwist
+,dnstwist_dns_active,http://hzdfc.com,hdfc.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.941176;source_file=dnstwist
+,dnstwist_dns_active,http://hdxfc.com,hdfc.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.941176;source_file=dnstwist
+,dnstwist_dns_active,http://hdftc.com,hdfc.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.941176;source_file=dnstwist
+,dnstwist_dns_active,http://zhdfc.com,hdfc.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.941176;source_file=dnstwist
+,dnstwist_dns_active,http://hdfgc.com,hdfc.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.941176;source_file=dnstwist
+,dnstwist_dns_active,http://uhdfc.com,hdfc.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.941176;source_file=dnstwist
+,dnstwist_dns_active,http://nhdfc.com,hdfc.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.941176;source_file=dnstwist
+,dnstwist_dns_active,http://hndfc.com,hdfc.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.941176;source_file=dnstwist
+,dnstwist_dns_active,http://hudfc.com,hdfc.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.941176;source_file=dnstwist
+,dnstwist_dns_active,http://hdcfc.com,hdfc.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.941176;source_file=dnstwist
+,dnstwist_dns_active,http://hdffc.com,hdfc.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.941176;source_file=dnstwist
+,dnstwist_dns_active,http://hfc.com,hdfc.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://dfc.com,hdfc.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://hdc.com,hdfc.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://hdf.com,hdfc.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://hhdfc.com,hdfc.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.941176;source_file=dnstwist
+,dnstwist_dns_active,http://hdff.com,hdfc.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.875000;source_file=dnstwist
+,dnstwist_dns_active,http://hdfx.com,hdfc.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.875000;source_file=dnstwist
+,dnstwist_dns_active,http://ydfc.com,hdfc.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.875000;source_file=dnstwist
+,dnstwist_dns_active,http://hcfc.com,hdfc.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.875000;source_file=dnstwist
+,dnstwist_dns_active,http://hdfd.com,hdfc.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.875000;source_file=dnstwist
+,dnstwist_dns_active,http://hdfv.com,hdfc.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.875000;source_file=dnstwist
+,dnstwist_dns_active,http://ndfc.com,hdfc.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.875000;source_file=dnstwist
+,dnstwist_dns_active,http://udfc.com,hdfc.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.875000;source_file=dnstwist
+,dnstwist_dns_active,http://hsfc.com,hdfc.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.875000;source_file=dnstwist
+,dnstwist_dns_active,http://bdfc.com,hdfc.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.875000;source_file=dnstwist
+,dnstwist_dns_active,http://hdtc.com,hdfc.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.875000;source_file=dnstwist
+,dnstwist_dns_active,http://hdrc.com,hdfc.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.875000;source_file=dnstwist
+,dnstwist_dns_active,http://hxfc.com,hdfc.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.875000;source_file=dnstwist
+,dnstwist_dns_active,http://hrfc.com,hdfc.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.875000;source_file=dnstwist
+,dnstwist_dns_active,http://hdcc.com,hdfc.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.875000;source_file=dnstwist
+,dnstwist_dns_active,http://gdfc.com,hdfc.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.875000;source_file=dnstwist
+,dnstwist_dns_active,http://hfdc.com,hdfc.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.875000;source_file=dnstwist
+,dnstwist_dns_active,http://dhfc.com,hdfc.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.875000;source_file=dnstwist
+,dnstwist_dns_active,http://hdcf.com,hdfc.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.875000;source_file=dnstwist
+,dnstwist_dns_active,http://icici.banke.in,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://icici.banki.in,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://icici.bankd.in,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://icici.banka.in,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://icici.bani.in,icici.bank.in,ICICI Bank,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://icici.fank.in,icici.bank.in,ICICI Bank,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://icici.bink.in,icici.bank.in,ICICI Bank,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://icici.rank.in,icici.bank.in,ICICI Bank,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://icici.bamk.in,icici.bank.in,ICICI Bank,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://icici.1bank.in,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://icici.ibank.in,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://icici.dark.in,icici.bank.in,ICICI Bank,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://icici.dank.in,icici.bank.in,ICICI Bank,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://icici.lbank.in,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://icici.nank.in,icici.bank.in,ICICI Bank,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://icici.bank-in.com,icici.bank.in,ICICI Bank,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://icici.bonk.in,icici.bank.in,ICICI Bank,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://hdfclifes.com,hdfclife.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.960000;source_file=dnstwist
+,dnstwist_dns_active,http://idfclife.com,hdfclife.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://hdfcilfe.com,hdfclife.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://hdfc-life.com,hdfclife.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=1.000000;source_file=dnstwist
+,dnstwist_dns_active,http://hfclife.com,hdfclife.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.956522;source_file=dnstwist
+,dnstwist_dns_active,http://hdclife.com,hdfclife.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.956522;source_file=dnstwist
+,dnstwist_dns_active,http://hdflife.com,hdfclife.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.956522;source_file=dnstwist
+,dnstwist_dns_active,http://hdfcfundd.com,hdfcfund.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.960000;source_file=dnstwist
+,dnstwist_dns_active,http://hdfcfunds.com,hdfcfund.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.960000;source_file=dnstwist
+,dnstwist_dns_active,http://hdfc-fund.com,hdfcfund.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=1.000000;source_file=dnstwist
+,dnstwist_dns_active,http://ndfcfund.com,hdfcfund.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://hdf.cfund.com,hdfc.bank.in,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://idfcfirst.banke.in,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://idfcfirst.banki.in,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://idfcfirst.bankd.in,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://idfcfirst.banka.in,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://idfcfirst.bani.in,idfcfirst.bank.in,IDFC FIRST Bank,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://idfcfirst.fank.in,idfcfirst.bank.in,IDFC FIRST Bank,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://idfcfirst.bink.in,idfcfirst.bank.in,IDFC FIRST Bank,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://idfcfirst.rank.in,idfcfirst.bank.in,IDFC FIRST Bank,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://idfcfirst.bamk.in,idfcfirst.bank.in,IDFC FIRST Bank,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://idfcfirst.1bank.in,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://idfcfirst.ibank.in,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://idfcfirst.dark.in,idfcfirst.bank.in,IDFC FIRST Bank,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://idfcfirst.dank.in,idfcfirst.bank.in,IDFC FIRST Bank,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://idfcfirst.lbank.in,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://idfcfirst.nank.in,idfcfirst.bank.in,IDFC FIRST Bank,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://idfcfirstbank.in,idfcfirstbank.com,,Unlabeled,03-05-2026,,cse_match_score=1.000000;source_file=dnstwist
+,dnstwist_dns_active,http://idfcfirst.bank-in.com,idfcfirst.bank.in,IDFC FIRST Bank,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://idfcfirst.bonk.in,idfcfirst.bank.in,IDFC FIRST Bank,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://iirs.in,iirs.gov.in,Indian Space Research Organisation (ISRO),Unlabeled,03-05-2026,,cse_match_score=1.000000;source_file=dnstwist
+,dnstwist_dns_active,http://indusind.banke.in,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://indusind.banki.in,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://indusind.bankd.in,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://indusind.banka.in,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://indusind.bani.in,indusind.bank.in,IndusInd Bank,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://indusind.fank.in,indusind.bank.in,IndusInd Bank,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://indusind.bink.in,indusind.bank.in,IndusInd Bank,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://indusind.rank.in,indusind.bank.in,IndusInd Bank,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://indusind.bamk.in,indusind.bank.in,IndusInd Bank,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://indusind.1bank.in,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://indusind.ibank.in,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://indusind.dark.in,indusind.bank.in,IndusInd Bank,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://indusind.dank.in,indusind.bank.in,IndusInd Bank,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://indusind.lbank.in,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://indusind.nank.in,indusind.bank.in,IndusInd Bank,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://indusind.bank-in.com,indusind.bank.in,IndusInd Bank,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://indusind.bonk.in,indusind.bank.in,IndusInd Bank,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://iocll.com,iocl.com,Indian Oil Corporation Limited (IOCL),Unlabeled,03-05-2026,,cse_match_score=0.941176;source_file=dnstwist
+,dnstwist_dns_active,http://ioclp.com,iocl.com,Indian Oil Corporation Limited (IOCL),Unlabeled,03-05-2026,,cse_match_score=0.941176;source_file=dnstwist
+,dnstwist_dns_active,http://iocls.com,iocl.com,Indian Oil Corporation Limited (IOCL),Unlabeled,03-05-2026,,cse_match_score=0.941176;source_file=dnstwist
+,dnstwist_dns_active,http://ioclo.com,iocl.com,Indian Oil Corporation Limited (IOCL),Unlabeled,03-05-2026,,cse_match_score=0.941176;source_file=dnstwist
+,dnstwist_dns_active,http://ioclk.com,iocl.com,Indian Oil Corporation Limited (IOCL),Unlabeled,03-05-2026,,cse_match_score=0.941176;source_file=dnstwist
+,dnstwist_dns_active,http://iocn.com,iocl.com,Indian Oil Corporation Limited (IOCL),Unlabeled,03-05-2026,,cse_match_score=0.875000;source_file=dnstwist
+,dnstwist_dns_active,http://iokl.com,iocl.com,Indian Oil Corporation Limited (IOCL),Unlabeled,03-05-2026,,cse_match_score=0.875000;source_file=dnstwist
+,dnstwist_dns_active,http://yocl.com,iocl.com,Indian Oil Corporation Limited (IOCL),Unlabeled,03-05-2026,,cse_match_score=0.875000;source_file=dnstwist
+,dnstwist_dns_active,http://iocm.com,iocl.com,Indian Oil Corporation Limited (IOCL),Unlabeled,03-05-2026,,cse_match_score=0.875000;source_file=dnstwist
+,dnstwist_dns_active,http://incl.com,iocl.com,Indian Oil Corporation Limited (IOCL),Unlabeled,03-05-2026,,cse_match_score=0.875000;source_file=dnstwist
+,dnstwist_dns_active,http://ioch.com,iocl.com,Indian Oil Corporation Limited (IOCL),Unlabeled,03-05-2026,,cse_match_score=0.875000;source_file=dnstwist
+,dnstwist_dns_active,http://ioal.com,iocl.com,Indian Oil Corporation Limited (IOCL),Unlabeled,03-05-2026,,cse_match_score=0.875000;source_file=dnstwist
+,dnstwist_dns_active,http://hocl.com,iocl.com,Indian Oil Corporation Limited (IOCL),Unlabeled,03-05-2026,,cse_match_score=0.875000;source_file=dnstwist
+,dnstwist_dns_active,http://ikcl.com,iocl.com,Indian Oil Corporation Limited (IOCL),Unlabeled,03-05-2026,,cse_match_score=0.875000;source_file=dnstwist
+,dnstwist_dns_active,http://iogl.com,iocl.com,Indian Oil Corporation Limited (IOCL),Unlabeled,03-05-2026,,cse_match_score=0.875000;source_file=dnstwist
+,dnstwist_dns_active,http://iosl.com,iocl.com,Indian Oil Corporation Limited (IOCL),Unlabeled,03-05-2026,,cse_match_score=0.875000;source_file=dnstwist
+,dnstwist_dns_active,http://kocl.com,iocl.com,Indian Oil Corporation Limited (IOCL),Unlabeled,03-05-2026,,cse_match_score=0.875000;source_file=dnstwist
+,dnstwist_dns_active,http://mocl.com,iocl.com,Indian Oil Corporation Limited (IOCL),Unlabeled,03-05-2026,,cse_match_score=0.875000;source_file=dnstwist
+,dnstwist_dns_active,http://igcl.com,iocl.com,Indian Oil Corporation Limited (IOCL),Unlabeled,03-05-2026,,cse_match_score=0.875000;source_file=dnstwist
+,dnstwist_dns_active,http://iobl.com,iocl.com,Indian Oil Corporation Limited (IOCL),Unlabeled,03-05-2026,,cse_match_score=0.875000;source_file=dnstwist
+,dnstwist_dns_active,http://iocd.com,iocl.com,Indian Oil Corporation Limited (IOCL),Unlabeled,03-05-2026,,cse_match_score=0.875000;source_file=dnstwist
+,dnstwist_dns_active,http://aocl.com,iocl.com,Indian Oil Corporation Limited (IOCL),Unlabeled,03-05-2026,,cse_match_score=0.875000;source_file=dnstwist
+,dnstwist_dns_active,http://imcl.com,iocl.com,Indian Oil Corporation Limited (IOCL),Unlabeled,03-05-2026,,cse_match_score=0.875000;source_file=dnstwist
+,dnstwist_dns_active,http://iob.com,jio.com,Jio,Unlabeled,03-05-2026,,cse_match_score=0.857143;source_file=dnstwist
+,dnstwist_dns_active,http://10cl.com,iocl.com,Indian Oil Corporation Limited (IOCL),Unlabeled,03-05-2026,,cse_match_score=0.875000;source_file=dnstwist
+,dnstwist_dns_active,http://iod.com,jio.com,Jio,Unlabeled,03-05-2026,,cse_match_score=0.857143;source_file=dnstwist
+,dnstwist_dns_active,http://ioc1.com,iocl.com,Indian Oil Corporation Limited (IOCL),Unlabeled,03-05-2026,,cse_match_score=1.000000;source_file=dnstwist
+,dnstwist_dns_active,http://loc1.com,iocl.com,Indian Oil Corporation Limited (IOCL),Unlabeled,03-05-2026,,cse_match_score=0.875000;source_file=dnstwist
+,dnstwist_dns_active,http://1oci.com,iocl.com,Indian Oil Corporation Limited (IOCL),Unlabeled,03-05-2026,,cse_match_score=0.750000;source_file=dnstwist
+,dnstwist_dns_active,http://i0d.com,jio.com,Jio,Unlabeled,03-05-2026,,cse_match_score=0.857143;source_file=dnstwist
+,dnstwist_dns_active,http://lod.com,cloud.gov.in,National Informatics Centre (NIC),Unlabeled,03-05-2026,,cse_match_score=0.750000;source_file=dnstwist
+,dnstwist_dns_active,http://locl.com,iocl.com,Indian Oil Corporation Limited (IOCL),Unlabeled,03-05-2026,,cse_match_score=0.875000;source_file=dnstwist
+,dnstwist_dns_active,http://iodl.com,iocl.com,Indian Oil Corporation Limited (IOCL),Unlabeled,03-05-2026,,cse_match_score=0.875000;source_file=dnstwist
+,dnstwist_dns_active,http://ioei.com,jio.com,Jio,Unlabeled,03-05-2026,,cse_match_score=0.800000;source_file=dnstwist
+,dnstwist_dns_active,http://loel.com,iocl.com,Indian Oil Corporation Limited (IOCL),Unlabeled,03-05-2026,,cse_match_score=0.750000;source_file=dnstwist
+,dnstwist_dns_active,http://loci.com,iocl.com,Indian Oil Corporation Limited (IOCL),Unlabeled,03-05-2026,,cse_match_score=0.750000;source_file=dnstwist
+,dnstwist_dns_active,http://1oc1.com,iocl.com,Indian Oil Corporation Limited (IOCL),Unlabeled,03-05-2026,,cse_match_score=0.875000;source_file=dnstwist
+,dnstwist_dns_active,http://ioel.com,iocl.com,Indian Oil Corporation Limited (IOCL),Unlabeled,03-05-2026,,cse_match_score=0.875000;source_file=dnstwist
+,dnstwist_dns_active,http://1oel.com,iocl.com,Indian Oil Corporation Limited (IOCL),Unlabeled,03-05-2026,,cse_match_score=0.750000;source_file=dnstwist
+,dnstwist_dns_active,http://ioci.com,iocl.com,Indian Oil Corporation Limited (IOCL),Unlabeled,03-05-2026,,cse_match_score=0.875000;source_file=dnstwist
+,dnstwist_dns_active,http://io-cl.com,iocl.com,Indian Oil Corporation Limited (IOCL),Unlabeled,03-05-2026,,cse_match_score=1.000000;source_file=dnstwist
+,dnstwist_dns_active,http://iofcl.com,iocl.com,Indian Oil Corporation Limited (IOCL),Unlabeled,03-05-2026,,cse_match_score=0.941176;source_file=dnstwist
+,dnstwist_dns_active,http://iodcl.com,iocl.com,Indian Oil Corporation Limited (IOCL),Unlabeled,03-05-2026,,cse_match_score=0.941176;source_file=dnstwist
+,dnstwist_dns_active,http://kiocl.com,iocl.com,Indian Oil Corporation Limited (IOCL),Unlabeled,03-05-2026,,cse_match_score=0.941176;source_file=dnstwist
+,dnstwist_dns_active,http://ioicl.com,iocl.com,Indian Oil Corporation Limited (IOCL),Unlabeled,03-05-2026,,cse_match_score=0.941176;source_file=dnstwist
+,dnstwist_dns_active,http://ilocl.com,iocl.com,Indian Oil Corporation Limited (IOCL),Unlabeled,03-05-2026,,cse_match_score=0.941176;source_file=dnstwist
+,dnstwist_dns_active,http://ocl.com,iocl.com,Indian Oil Corporation Limited (IOCL),Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://iol.com,iocl.com,Indian Oil Corporation Limited (IOCL),Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://ioc.com,iocl.com,Indian Oil Corporation Limited (IOCL),Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://ioxl.com,iocl.com,Indian Oil Corporation Limited (IOCL),Unlabeled,03-05-2026,,cse_match_score=0.875000;source_file=dnstwist
+,dnstwist_dns_active,http://iocp.com,iocl.com,Indian Oil Corporation Limited (IOCL),Unlabeled,03-05-2026,,cse_match_score=0.875000;source_file=dnstwist
+,dnstwist_dns_active,http://iock.com,iocl.com,Indian Oil Corporation Limited (IOCL),Unlabeled,03-05-2026,,cse_match_score=0.875000;source_file=dnstwist
+,dnstwist_dns_active,http://oocl.com,iocl.com,Indian Oil Corporation Limited (IOCL),Unlabeled,03-05-2026,,cse_match_score=0.875000;source_file=dnstwist
+,dnstwist_dns_active,http://iovl.com,iocl.com,Indian Oil Corporation Limited (IOCL),Unlabeled,03-05-2026,,cse_match_score=0.875000;source_file=dnstwist
+,dnstwist_dns_active,http://iicl.com,iocl.com,Indian Oil Corporation Limited (IOCL),Unlabeled,03-05-2026,,cse_match_score=0.875000;source_file=dnstwist
+,dnstwist_dns_active,http://ilcl.com,iocl.com,Indian Oil Corporation Limited (IOCL),Unlabeled,03-05-2026,,cse_match_score=0.875000;source_file=dnstwist
+,dnstwist_dns_active,http://uocl.com,iocl.com,Indian Oil Corporation Limited (IOCL),Unlabeled,03-05-2026,,cse_match_score=0.875000;source_file=dnstwist
+,dnstwist_dns_active,http://ioco.com,iocl.com,Indian Oil Corporation Limited (IOCL),Unlabeled,03-05-2026,,cse_match_score=0.875000;source_file=dnstwist
+,dnstwist_dns_active,http://8ocl.com,iocl.com,Indian Oil Corporation Limited (IOCL),Unlabeled,03-05-2026,,cse_match_score=0.875000;source_file=dnstwist
+,dnstwist_dns_active,http://iofl.com,iocl.com,Indian Oil Corporation Limited (IOCL),Unlabeled,03-05-2026,,cse_match_score=0.875000;source_file=dnstwist
+,dnstwist_dns_active,http://jocl.com,iocl.com,Indian Oil Corporation Limited (IOCL),Unlabeled,03-05-2026,,cse_match_score=0.875000;source_file=dnstwist
+,dnstwist_dns_active,http://io.cl.com,indianoilcgd.com,Indian Oil Corporation Limited (IOCL),Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://icol.com,iocl.com,Indian Oil Corporation Limited (IOCL),Unlabeled,03-05-2026,,cse_match_score=0.875000;source_file=dnstwist
+,dnstwist_dns_active,http://iolc.com,iocl.com,Indian Oil Corporation Limited (IOCL),Unlabeled,03-05-2026,,cse_match_score=0.875000;source_file=dnstwist
+,dnstwist_dns_active,http://oicl.com,iocl.com,Indian Oil Corporation Limited (IOCL),Unlabeled,03-05-2026,,cse_match_score=0.875000;source_file=dnstwist
+,dnstwist_dns_active,http://eocl.com,iocl.com,Indian Oil Corporation Limited (IOCL),Unlabeled,03-05-2026,,cse_match_score=0.875000;source_file=dnstwist
+,dnstwist_dns_active,http://iucl.com,iocl.com,Indian Oil Corporation Limited (IOCL),Unlabeled,03-05-2026,,cse_match_score=0.875000;source_file=dnstwist
+,dnstwist_dns_active,http://iacl.com,iocl.com,Indian Oil Corporation Limited (IOCL),Unlabeled,03-05-2026,,cse_match_score=0.875000;source_file=dnstwist
+,dnstwist_dns_active,http://iecl.com,iocl.com,Indian Oil Corporation Limited (IOCL),Unlabeled,03-05-2026,,cse_match_score=0.875000;source_file=dnstwist
+,dnstwist_dns_active,http://irctcc.co.in,irctc.co.in,Indian Railway Catering and Tourism Corporation (IRCTC),Unlabeled,03-05-2026,,cse_match_score=0.956522;source_file=dnstwist
+,dnstwist_dns_active,http://ircts.co.in,irctc.co.in,Indian Railway Catering and Tourism Corporation (IRCTC),Unlabeled,03-05-2026,,cse_match_score=0.909091;source_file=dnstwist
+,dnstwist_dns_active,http://itrctc.co.in,irctc.co.in,Indian Railway Catering and Tourism Corporation (IRCTC),Unlabeled,03-05-2026,,cse_match_score=0.956522;source_file=dnstwist
+,dnstwist_dns_active,http://irct.co.in,irctc.co.in,Indian Railway Catering and Tourism Corporation (IRCTC),Unlabeled,03-05-2026,,cse_match_score=0.952381;source_file=dnstwist
+,dnstwist_dns_active,http://rctc.co.in,irctc.co.in,Indian Railway Catering and Tourism Corporation (IRCTC),Unlabeled,03-05-2026,,cse_match_score=0.952381;source_file=dnstwist
+,dnstwist_dns_active,http://ircrc.co.in,irctc.co.in,Indian Railway Catering and Tourism Corporation (IRCTC),Unlabeled,03-05-2026,,cse_match_score=0.909091;source_file=dnstwist
+,dnstwist_dns_active,http://irctv.co.in,irctc.co.in,Indian Railway Catering and Tourism Corporation (IRCTC),Unlabeled,03-05-2026,,cse_match_score=0.909091;source_file=dnstwist
+,dnstwist_dns_active,http://irctx.co.in,irctc.co.in,Indian Railway Catering and Tourism Corporation (IRCTC),Unlabeled,03-05-2026,,cse_match_score=0.909091;source_file=dnstwist
+,dnstwist_dns_active,http://irvtc.co.in,irctc.co.in,Indian Railway Catering and Tourism Corporation (IRCTC),Unlabeled,03-05-2026,,cse_match_score=0.909091;source_file=dnstwist
+,dnstwist_dns_active,http://urctc.co.in,irctc.co.in,Indian Railway Catering and Tourism Corporation (IRCTC),Unlabeled,03-05-2026,,cse_match_score=0.909091;source_file=dnstwist
+,dnstwist_dns_active,http://ir.ctc.co.in,irctc.co.in,Indian Railway Catering and Tourism Corporation (IRCTC),Unlabeled,03-05-2026,,cse_match_score=0.900000;source_file=dnstwist
+,dnstwist_dns_active,http://rictc.co.in,irctc.co.in,Indian Railway Catering and Tourism Corporation (IRCTC),Unlabeled,03-05-2026,,cse_match_score=0.909091;source_file=dnstwist
+,dnstwist_dns_active,http://isro.in,isro.gov.in,Indian Space Research Organisation (ISRO),Unlabeled,03-05-2026,,cse_match_score=1.000000;source_file=dnstwist
+,dnstwist_dns_active,http://jioj.com,jio.com,Jio,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://jio7.com,jio.com,Jio,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://jioa.com,jio.com,Jio,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://jiod.com,jio.com,Jio,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://jioh.com,jio.com,Jio,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://jiom.com,jio.com,Jio,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://jion.com,jio.com,Jio,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://jiot.com,jio.com,Jio,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://jiox.com,jio.com,Jio,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://jioy.com,jio.com,Jio,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://jiof.com,jio.com,Jio,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://jios.com,jio.com,Jio,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://jiow.com,jio.com,Jio,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://jioz.com,jio.com,Jio,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://jiou.com,jio.com,Jio,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://jiop.com,jio.com,Jio,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://jioo.com,jio.com,Jio,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://jio4.com,jio.com,Jio,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://jiol.com,jio.com,Jio,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://jioc.com,jio.com,Jio,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://jioq.com,jio.com,Jio,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://jiov.com,jio.com,Jio,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://jiog.com,jio.com,Jio,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://jioi.com,jio.com,Jio,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://jiok.com,jio.com,Jio,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://jiob.com,jio.com,Jio,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://jioe.com,jio.com,Jio,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://jio9.com,jio.com,Jio,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://jim.com,jio.com,Jio,Unlabeled,03-05-2026,,cse_match_score=0.857143;source_file=dnstwist
+,dnstwist_dns_active,http://nio.com,jio.com,Jio,Unlabeled,03-05-2026,,cse_match_score=0.857143;source_file=dnstwist
+,dnstwist_dns_active,http://jmo.com,jio.com,Jio,Unlabeled,03-05-2026,,cse_match_score=0.857143;source_file=dnstwist
+,dnstwist_dns_active,http://kio.com,jio.com,Jio,Unlabeled,03-05-2026,,cse_match_score=0.857143;source_file=dnstwist
+,dnstwist_dns_active,http://bio.com,jio.com,Jio,Unlabeled,03-05-2026,,cse_match_score=0.857143;source_file=dnstwist
+,dnstwist_dns_active,http://jko.com,jio.com,Jio,Unlabeled,03-05-2026,,cse_match_score=0.857143;source_file=dnstwist
+,dnstwist_dns_active,http://jig.com,jio.com,Jio,Unlabeled,03-05-2026,,cse_match_score=0.857143;source_file=dnstwist
+,dnstwist_dns_active,http://jho.com,jio.com,Jio,Unlabeled,03-05-2026,,cse_match_score=0.857143;source_file=dnstwist
+,dnstwist_dns_active,http://hio.com,jio.com,Jio,Unlabeled,03-05-2026,,cse_match_score=0.857143;source_file=dnstwist
+,dnstwist_dns_active,http://zio.com,jio.com,Jio,Unlabeled,03-05-2026,,cse_match_score=0.857143;source_file=dnstwist
+,dnstwist_dns_active,http://jik.com,jio.com,Jio,Unlabeled,03-05-2026,,cse_match_score=0.857143;source_file=dnstwist
+,dnstwist_dns_active,http://jyo.com,jio.com,Jio,Unlabeled,03-05-2026,,cse_match_score=0.857143;source_file=dnstwist
+,dnstwist_dns_active,http://ji0.com,jio.com,Jio,Unlabeled,03-05-2026,,cse_match_score=1.000000;source_file=dnstwist
+,dnstwist_dns_active,http://jl0.com,jio.com,Jio,Unlabeled,03-05-2026,,cse_match_score=0.857143;source_file=dnstwist
+,dnstwist_dns_active,http://j10.com,jio.com,Jio,Unlabeled,03-05-2026,,cse_match_score=0.857143;source_file=dnstwist
+,dnstwist_dns_active,http://jlo.com,jio.com,Jio,Unlabeled,03-05-2026,,cse_match_score=0.857143;source_file=dnstwist
+,dnstwist_dns_active,http://j1o.com,jio.com,Jio,Unlabeled,03-05-2026,,cse_match_score=0.857143;source_file=dnstwist
+,dnstwist_dns_active,http://j-io.com,jio.com,Jio,Unlabeled,03-05-2026,,cse_match_score=1.000000;source_file=dnstwist
+,dnstwist_dns_active,http://jjio.com,jio.com,Jio,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://kjio.com,jio.com,Jio,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://ujio.com,jio.com,Jio,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://njio.com,jio.com,Jio,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://hjio.com,jio.com,Jio,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://j8io.com,jio.com,Jio,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://juio.com,jio.com,Jio,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://jijo.com,jio.com,Jio,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://mjio.com,jio.com,Jio,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://jiuo.com,jio.com,Jio,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://jmio.com,jio.com,Jio,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://jiio.com,jio.com,Jio,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://jnio.com,jio.com,Jio,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://jkio.com,jio.com,Jio,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://joio.com,jio.com,Jio,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://jiko.com,jio.com,Jio,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://jhio.com,jio.com,Jio,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://ijio.com,jio.com,Jio,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://jo.com,jio.com,Jio,Unlabeled,03-05-2026,,cse_match_score=0.923077;source_file=dnstwist
+,dnstwist_dns_active,http://juo.com,jio.com,Jio,Unlabeled,03-05-2026,,cse_match_score=0.857143;source_file=dnstwist
+,dnstwist_dns_active,http://mio.com,jio.com,Jio,Unlabeled,03-05-2026,,cse_match_score=0.857143;source_file=dnstwist
+,dnstwist_dns_active,http://j9o.com,jio.com,Jio,Unlabeled,03-05-2026,,cse_match_score=0.857143;source_file=dnstwist
+,dnstwist_dns_active,http://jjo.com,jio.com,Jio,Unlabeled,03-05-2026,,cse_match_score=0.857143;source_file=dnstwist
+,dnstwist_dns_active,http://j8o.com,jio.com,Jio,Unlabeled,03-05-2026,,cse_match_score=0.857143;source_file=dnstwist
+,dnstwist_dns_active,http://uio.com,jio.com,Jio,Unlabeled,03-05-2026,,cse_match_score=0.857143;source_file=dnstwist
+,dnstwist_dns_active,http://ji9.com,jio.com,Jio,Unlabeled,03-05-2026,,cse_match_score=0.857143;source_file=dnstwist
+,dnstwist_dns_active,http://jii.com,jio.com,Jio,Unlabeled,03-05-2026,,cse_match_score=0.857143;source_file=dnstwist
+,dnstwist_dns_active,http://iio.com,jio.com,Jio,Unlabeled,03-05-2026,,cse_match_score=0.857143;source_file=dnstwist
+,dnstwist_dns_active,http://joo.com,jio.com,Jio,Unlabeled,03-05-2026,,cse_match_score=0.857143;source_file=dnstwist
+,dnstwist_dns_active,http://joi.com,jio.com,Jio,Unlabeled,03-05-2026,,cse_match_score=0.857143;source_file=dnstwist
+,dnstwist_dns_active,http://ijo.com,jio.com,Jio,Unlabeled,03-05-2026,,cse_match_score=0.857143;source_file=dnstwist
+,dnstwist_dns_active,http://jiocom.com,jio.com,Jio,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://jie.com,jio.com,Jio,Unlabeled,03-05-2026,,cse_match_score=0.857143;source_file=dnstwist
+,dnstwist_dns_active,http://jeo.com,jio.com,Jio,Unlabeled,03-05-2026,,cse_match_score=0.857143;source_file=dnstwist
+,dnstwist_dns_active,http://jia.com,jio.com,Jio,Unlabeled,03-05-2026,,cse_match_score=0.857143;source_file=dnstwist
+,dnstwist_dns_active,http://myvin.in,myvi.in,Vodafone Idea (VI),Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://myvix.in,myvi.in,Vodafone Idea (VI),Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://myfi.in,myvi.in,Vodafone Idea (VI),Unlabeled,03-05-2026,,cse_match_score=0.857143;source_file=dnstwist
+,dnstwist_dns_active,http://myti.in,myvi.in,Vodafone Idea (VI),Unlabeled,03-05-2026,,cse_match_score=0.857143;source_file=dnstwist
+,dnstwist_dns_active,http://mywi.in,myvi.in,Vodafone Idea (VI),Unlabeled,03-05-2026,,cse_match_score=0.857143;source_file=dnstwist
+,dnstwist_dns_active,http://myvk.in,myvi.in,Vodafone Idea (VI),Unlabeled,03-05-2026,,cse_match_score=0.857143;source_file=dnstwist
+,dnstwist_dns_active,http://myvy.in,myvi.in,Vodafone Idea (VI),Unlabeled,03-05-2026,,cse_match_score=0.857143;source_file=dnstwist
+,dnstwist_dns_active,http://myvm.in,myvi.in,Vodafone Idea (VI),Unlabeled,03-05-2026,,cse_match_score=0.857143;source_file=dnstwist
+,dnstwist_dns_active,http://mivi.in,myvi.in,Vodafone Idea (VI),Unlabeled,03-05-2026,,cse_match_score=0.857143;source_file=dnstwist
+,dnstwist_dns_active,http://lyvi.in,myvi.in,Vodafone Idea (VI),Unlabeled,03-05-2026,,cse_match_score=0.857143;source_file=dnstwist
+,dnstwist_dns_active,http://myva.in,myvi.in,Vodafone Idea (VI),Unlabeled,03-05-2026,,cse_match_score=0.857143;source_file=dnstwist
+,dnstwist_dns_active,http://myui.in,myvi.in,Vodafone Idea (VI),Unlabeled,03-05-2026,,cse_match_score=0.857143;source_file=dnstwist
+,dnstwist_dns_active,http://mysvi.in,myvi.in,Vodafone Idea (VI),Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://yvi.in,myvi.in,Vodafone Idea (VI),Unlabeled,03-05-2026,,cse_match_score=0.923077;source_file=dnstwist
+,dnstwist_dns_active,http://myv.in,myvi.in,Vodafone Idea (VI),Unlabeled,03-05-2026,,cse_match_score=0.923077;source_file=dnstwist
+,dnstwist_dns_active,http://myi.in,myvi.in,Vodafone Idea (VI),Unlabeled,03-05-2026,,cse_match_score=0.923077;source_file=dnstwist
+,dnstwist_dns_active,http://mybi.in,myvi.in,Vodafone Idea (VI),Unlabeled,03-05-2026,,cse_match_score=0.857143;source_file=dnstwist
+,dnstwist_dns_active,http://myvo.in,myvi.in,Vodafone Idea (VI),Unlabeled,03-05-2026,,cse_match_score=0.857143;source_file=dnstwist
+,dnstwist_dns_active,http://myci.in,myvi.in,Vodafone Idea (VI),Unlabeled,03-05-2026,,cse_match_score=0.857143;source_file=dnstwist
+,dnstwist_dns_active,http://jyvi.in,myvi.in,Vodafone Idea (VI),Unlabeled,03-05-2026,,cse_match_score=0.857143;source_file=dnstwist
+,dnstwist_dns_active,http://mygi.in,myvi.in,Vodafone Idea (VI),Unlabeled,03-05-2026,,cse_match_score=0.857143;source_file=dnstwist
+,dnstwist_dns_active,http://muvi.in,myvi.in,Vodafone Idea (VI),Unlabeled,03-05-2026,,cse_match_score=0.857143;source_file=dnstwist
+,dnstwist_dns_active,http://myvu.in,myvi.in,Vodafone Idea (VI),Unlabeled,03-05-2026,,cse_match_score=0.857143;source_file=dnstwist
+,dnstwist_dns_active,http://m.yvi.in,myvi.in,Vodafone Idea (VI),Unlabeled,03-05-2026,,cse_match_score=0.923077;source_file=dnstwist
+,dnstwist_dns_active,http://myve.in,myvi.in,Vodafone Idea (VI),Unlabeled,03-05-2026,,cse_match_score=0.857143;source_file=dnstwist
+,dnstwist_dns_active,http://jfintech.com,kfintech.com,Kfintech,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://cfintech.com,kfintech.com,Kfintech,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://ofintech.com,kfintech.com,Kfintech,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://kvintech.com,kfintech.com,Kfintech,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://ifintech.com,kfintech.com,Kfintech,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://lefintech.com,kfintech.com,Kfintech,Unlabeled,03-05-2026,,cse_match_score=0.880000;source_file=dnstwist
+,dnstwist_dns_active,http://kfin-tech.com,kfintech.com,Kfintech,Unlabeled,03-05-2026,,cse_match_score=1.000000;source_file=dnstwist
+,dnstwist_dns_active,http://jkfintech.com,kfintech.com,Kfintech,Unlabeled,03-05-2026,,cse_match_score=0.960000;source_file=dnstwist
+,dnstwist_dns_active,http://kdfintech.com,kfintech.com,Kfintech,Unlabeled,03-05-2026,,cse_match_score=0.960000;source_file=dnstwist
+,dnstwist_dns_active,http://kmfintech.com,kfintech.com,Kfintech,Unlabeled,03-05-2026,,cse_match_score=0.960000;source_file=dnstwist
+,dnstwist_dns_active,http://okfintech.com,kfintech.com,Kfintech,Unlabeled,03-05-2026,,cse_match_score=0.960000;source_file=dnstwist
+,dnstwist_dns_active,http://lkfintech.com,kfintech.com,Kfintech,Unlabeled,03-05-2026,,cse_match_score=0.960000;source_file=dnstwist
+,dnstwist_dns_active,http://kifintech.com,kfintech.com,Kfintech,Unlabeled,03-05-2026,,cse_match_score=0.960000;source_file=dnstwist
+,dnstwist_dns_active,http://krfintech.com,kfintech.com,Kfintech,Unlabeled,03-05-2026,,cse_match_score=0.960000;source_file=dnstwist
+,dnstwist_dns_active,http://fintech.com,kfintech.com,Kfintech,Unlabeled,03-05-2026,,cse_match_score=0.956522;source_file=dnstwist
+,dnstwist_dns_active,http://kfitech.com,kfintech.com,Kfintech,Unlabeled,03-05-2026,,cse_match_score=0.956522;source_file=dnstwist
+,dnstwist_dns_active,http://kfntech.com,kfintech.com,Kfintech,Unlabeled,03-05-2026,,cse_match_score=0.956522;source_file=dnstwist
+,dnstwist_dns_active,http://kkfintech.com,kfintech.com,Kfintech,Unlabeled,03-05-2026,,cse_match_score=0.960000;source_file=dnstwist
+,dnstwist_dns_active,http://kfuntech.com,kfintech.com,Kfintech,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://lfintech.com,kfintech.com,Kfintech,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://krintech.com,kfintech.com,Kfintech,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://nicf.gov.in,nic.gov.in,National Informatics Centre (NIC),Unlabeled,03-05-2026,,cse_match_score=0.952381;source_file=dnstwist
+,dnstwist_dns_active,http://nmc.gov.in,nic.gov.in,National Informatics Centre (NIC),Unlabeled,03-05-2026,,cse_match_score=0.900000;source_file=dnstwist
+,dnstwist_dns_active,http://nib.gov.in,nic.gov.in,National Informatics Centre (NIC),Unlabeled,03-05-2026,,cse_match_score=0.900000;source_file=dnstwist
+,dnstwist_dns_active,http://nia.gov.in,nha.gov.in,National Health Authority (NHA),Unlabeled,03-05-2026,,cse_match_score=0.900000;source_file=dnstwist
+,dnstwist_dns_active,http://nie.gov.in,nic.gov.in,National Informatics Centre (NIC),Unlabeled,03-05-2026,,cse_match_score=0.900000;source_file=dnstwist
+,dnstwist_dns_active,http://mic.gov.in,nic.gov.in,National Informatics Centre (NIC),Unlabeled,03-05-2026,,cse_match_score=0.900000;source_file=dnstwist
+,dnstwist_dns_active,http://nhai.gov.in,nha.gov.in,National Health Authority (NHA),Unlabeled,03-05-2026,,cse_match_score=0.952381;source_file=dnstwist
+,dnstwist_dns_active,http://nja.gov.in,nha.gov.in,National Health Authority (NHA),Unlabeled,03-05-2026,,cse_match_score=0.900000;source_file=dnstwist
+,dnstwist_dns_active,http://mha.gov.in,nha.gov.in,National Health Authority (NHA),Unlabeled,03-05-2026,,cse_match_score=0.900000;source_file=dnstwist
+,dnstwist_dns_active,http://nha.in,nha.gov.in,National Health Authority (NHA),Unlabeled,03-05-2026,,cse_match_score=1.000000;source_file=dnstwist
+,dnstwist_dns_active,http://npp.gov.in,npr.gov.in,npr,Unlabeled,03-05-2026,,cse_match_score=0.900000;source_file=dnstwist
+,dnstwist_dns_active,http://nqr.gov.in,npr.gov.in,npr,Unlabeled,03-05-2026,,cse_match_score=0.900000;source_file=dnstwist
+,dnstwist_dns_active,http://netpob.com,netpnb.com,Punjab National Bank (PNB),Unlabeled,03-05-2026,,cse_match_score=0.900000;source_file=dnstwist
+,dnstwist_dns_active,http://metpnb.com,netpnb.com,Punjab National Bank (PNB),Unlabeled,03-05-2026,,cse_match_score=0.900000;source_file=dnstwist
+,dnstwist_dns_active,http://netpmd.com,netpnb.com,Punjab National Bank (PNB),Unlabeled,03-05-2026,,cse_match_score=0.800000;source_file=dnstwist
+,dnstwist_dns_active,http://netpn.com,netpnb.com,Punjab National Bank (PNB),Unlabeled,03-05-2026,,cse_match_score=0.947368;source_file=dnstwist
+,dnstwist_dns_active,http://netnb.com,netpnb.com,Punjab National Bank (PNB),Unlabeled,03-05-2026,,cse_match_score=0.947368;source_file=dnstwist
+,dnstwist_dns_active,http://netpb.com,netpnb.com,Punjab National Bank (PNB),Unlabeled,03-05-2026,,cse_match_score=0.947368;source_file=dnstwist
+,dnstwist_dns_active,http://ntpnb.com,netpnb.com,Punjab National Bank (PNB),Unlabeled,03-05-2026,,cse_match_score=0.947368;source_file=dnstwist
+,dnstwist_dns_active,http://betpnb.com,netpnb.com,Punjab National Bank (PNB),Unlabeled,03-05-2026,,cse_match_score=0.900000;source_file=dnstwist
+,dnstwist_dns_active,http://netpng.com,netpnb.com,Punjab National Bank (PNB),Unlabeled,03-05-2026,,cse_match_score=0.900000;source_file=dnstwist
+,dnstwist_dns_active,http://ne.tpnb.com,netpnb.com,Punjab National Bank (PNB),Unlabeled,03-05-2026,,cse_match_score=0.888889;source_file=dnstwist
+,dnstwist_dns_active,http://nsc.gov.in,nrsc.gov.in,Indian Space Research Organisation (ISRO),Unlabeled,03-05-2026,,cse_match_score=0.952381;source_file=dnstwist
+,dnstwist_dns_active,http://onlinesbi.sbi.banke.in,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://onlinesbi.sbi.banki.in,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://onlinesbi.sbi.bankd.in,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://onlinesbi.sbi.banka.in,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://onlinesbi.sbi.bani.in,corp.onlinesbi.sbi,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://onlinesbi.sbi.fank.in,corp.onlinesbi.sbi,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://onlinesbi.sbi.bink.in,corp.onlinesbi.sbi,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://onlinesbi.sbi.rank.in,corp.onlinesbi.sbi,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://onlinesbi.sbi.bamk.in,corp.onlinesbi.sbi,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://onlinesbi.sbi.1bank.in,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://onlinesbi.sbi.ibank.in,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://onlinesbi.sbi.dark.in,corp.onlinesbi.sbi,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://onlinesbi.sbi.dank.in,corp.onlinesbi.sbi,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://onlinesbi.sbi.lbank.in,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://onlinesbi.sbi.nank.in,corp.onlinesbi.sbi,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://onlinesbi.sbi.bank-in.com,corp.onlinesbi.sbi,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://onlinesbi.sbi.bonk.in,corp.onlinesbi.sbi,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://pnb.banke.in,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://pnb.banki.in,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://pnb.bankd.in,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://pnb.banka.in,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://pnb.bani.in,netpnb.com,Punjab National Bank (PNB),Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://pnb.fank.in,netpnb.com,Punjab National Bank (PNB),Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://pnb.bink.in,netpnb.com,Punjab National Bank (PNB),Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://pnb.rank.in,netpnb.com,Punjab National Bank (PNB),Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://pnb.bamk.in,netpnb.com,Punjab National Bank (PNB),Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://pnb.1bank.in,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://pnb.ibank.in,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://pnb.dark.in,netpnb.com,Punjab National Bank (PNB),Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://pnb.dank.in,netpnb.com,Punjab National Bank (PNB),Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://pnb.lbank.in,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://pnb.nank.in,netpnb.com,Punjab National Bank (PNB),Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://pnbbank.in,netpnb.com,Punjab National Bank (PNB),Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://pnb.bank-in.com,netpnb.com,Punjab National Bank (PNB),Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://pnb.bonk.in,netpnb.com,Punjab National Bank (PNB),Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://netbanking.hdfcbanks.com,netbanking.hdfcbank.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.960000;source_file=dnstwist
+,dnstwist_dns_active,http://netbanking.hdfcbankc.com,netbanking.hdfcbank.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.960000;source_file=dnstwist
+,dnstwist_dns_active,http://netbanking.hdfcbankj.com,netbanking.hdfcbank.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.960000;source_file=dnstwist
+,dnstwist_dns_active,http://netbanking.hdfcbankl.com,netbanking.hdfcbank.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.960000;source_file=dnstwist
+,dnstwist_dns_active,http://netbanking.hdgcbank.com,netbanking.hdfcbank.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://netbanking.hffcbank.com,netbanking.hdfcbank.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://netbanking.hdfcbanj.com,netbanking.hdfcbank.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://netbanking.hdfsbank.com,netbanking.hdfcbank.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://netbanking.hefcbank.com,netbanking.hdfcbank.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://netbanking.hddcbank.com,netbanking.hdfcbank.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://netbanking.hdfcbano.com,netbanking.hdfcbank.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://netbanking.hdfcbqnk.com,netbanking.hdfcbank.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://netbanking.jdfcbank.com,netbanking.hdfcbank.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://netbanking.hdfebank.com,netbanking.hdfcbank.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://netbanking.hdfdbank.com,netbanking.hdfcbank.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://netbanking.hddfcbank.com,netbanking.hdfcbank.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.960000;source_file=dnstwist
+,dnstwist_dns_active,http://netbanking.hdfcbasnk.com,netbanking.hdfcbank.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.960000;source_file=dnstwist
+,dnstwist_dns_active,http://netbanking.hdfccbank.com,netbanking.hdfcbank.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.960000;source_file=dnstwist
+,dnstwist_dns_active,http://netbanking.hdcfcbank.com,netbanking.hdfcbank.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.960000;source_file=dnstwist
+,dnstwist_dns_active,http://netbanking.hdfcbamnk.com,netbanking.hdfcbank.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.960000;source_file=dnstwist
+,dnstwist_dns_active,http://netbanking.hdfcbanjk.com,netbanking.hdfcbank.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.960000;source_file=dnstwist
+,dnstwist_dns_active,http://netbanking.hdfcbanmk.com,netbanking.hdfcbank.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.960000;source_file=dnstwist
+,dnstwist_dns_active,http://netbanking.hdfcbsank.com,netbanking.hdfcbank.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.960000;source_file=dnstwist
+,dnstwist_dns_active,http://netbanking.hdfcnbank.com,netbanking.hdfcbank.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.960000;source_file=dnstwist
+,dnstwist_dns_active,http://netbanking.hdfvcbank.com,netbanking.hdfcbank.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.960000;source_file=dnstwist
+,dnstwist_dns_active,http://netbanking.hdfxcbank.com,netbanking.hdfcbank.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.960000;source_file=dnstwist
+,dnstwist_dns_active,http://netbanking.hdgfcbank.com,netbanking.hdfcbank.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.960000;source_file=dnstwist
+,dnstwist_dns_active,http://netbanking.hfdfcbank.com,netbanking.hdfcbank.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.960000;source_file=dnstwist
+,dnstwist_dns_active,http://netbanking.jhdfcbank.com,netbanking.hdfcbank.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.960000;source_file=dnstwist
+,dnstwist_dns_active,http://netbanking.hdfbank.com,netbanking.hdfcbank.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.956522;source_file=dnstwist
+,dnstwist_dns_active,http://netbanking.dfcbank.com,netbanking.hdfcbank.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.956522;source_file=dnstwist
+,dnstwist_dns_active,http://netbanking.hdfcban.com,netbanking.hdfcbank.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.956522;source_file=dnstwist
+,dnstwist_dns_active,http://netbanking.hdfcbak.com,netbanking.hdfcbank.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.956522;source_file=dnstwist
+,dnstwist_dns_active,http://netbanking.hdcbank.com,netbanking.hdfcbank.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.956522;source_file=dnstwist
+,dnstwist_dns_active,http://netbanking.hdfcank.com,netbanking.hdfcbank.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.956522;source_file=dnstwist
+,dnstwist_dns_active,http://netbanking.hdfcbnk.com,netbanking.hdfcbank.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.956522;source_file=dnstwist
+,dnstwist_dns_active,http://netbanking.hdfcbbank.com,netbanking.hdfcbank.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.960000;source_file=dnstwist
+,dnstwist_dns_active,http://netbanking.hdfcbaank.com,netbanking.hdfcbank.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.960000;source_file=dnstwist
+,dnstwist_dns_active,http://netbanking.hhdfcbank.com,netbanking.hdfcbank.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.960000;source_file=dnstwist
+,dnstwist_dns_active,http://netbanking.hdfxbank.com,netbanking.hdfcbank.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://netbanking.hdtcbank.com,netbanking.hdfcbank.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://netbanking.hsfcbank.com,netbanking.hdfcbank.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://netbanking.hdfcnank.com,netbanking.hdfcbank.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://netbanking.hdfcbanl.com,netbanking.hdfcbank.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://netbanking.hdfcbabk.com,netbanking.hdfcbank.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://netbanking.bdfcbank.com,netbanking.hdfcbank.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://netbanking.hdccbank.com,netbanking.hdfcbank.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://netbanking.hdfcvank.com,netbanking.hdfcbank.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://netbanking.hdfvbank.com,netbanking.hdfcbank.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://netbanking.hdrcbank.com,netbanking.hdfcbank.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://netbanking.gdfcbank.com,netbanking.hdfcbank.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://netbanking.h.dfcbank.com,netbanking.hdfcbank.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.956522;source_file=dnstwist
+,dnstwist_dns_active,http://netbanking.hd.fcbank.com,netbanking.hdfcbank.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.909091;source_file=dnstwist
+,dnstwist_dns_active,http://netbanking.hdf.cbank.com,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.888889;source_file=dnstwist
+,dnstwist_dns_active,http://netbanking.hdfcabnk.com,netbanking.hdfcbank.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://netbanking.hfdcbank.com,netbanking.hdfcbank.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://netbanking.hdcfbank.com,netbanking.hdfcbank.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://netbanking.hdfcbnak.com,netbanking.hdfcbank.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://netbanking.dhfcbank.com,netbanking.hdfcbank.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://netbanking.hdfbcank.com,netbanking.hdfcbank.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://netbanking.hdfcbakn.com,netbanking.hdfcbank.com,HDFC Bank,Unlabeled,03-05-2026,,cse_match_score=0.916667;source_file=dnstwist
+,dnstwist_dns_active,http://pncindia.in,pnbindia.in,Punjab National Bank (PNB),Unlabeled,03-05-2026,,cse_match_score=0.909091;source_file=dnstwist
+,dnstwist_dns_active,http://prdindia.in,pnbindia.in,Punjab National Bank (PNB),Unlabeled,03-05-2026,,cse_match_score=0.818182;source_file=dnstwist
+,dnstwist_dns_active,http://pmdindia.in,pnbindia.in,Punjab National Bank (PNB),Unlabeled,03-05-2026,,cse_match_score=0.818182;source_file=dnstwist
+,dnstwist_dns_active,http://nbindia.in,pnbindia.in,Punjab National Bank (PNB),Unlabeled,03-05-2026,,cse_match_score=0.952381;source_file=dnstwist
+,dnstwist_dns_active,http://pbindia.in,pnbindia.in,Punjab National Bank (PNB),Unlabeled,03-05-2026,,cse_match_score=0.952381;source_file=dnstwist
+,dnstwist_dns_active,http://pngindia.in,pnbindia.in,Punjab National Bank (PNB),Unlabeled,03-05-2026,,cse_match_score=0.909091;source_file=dnstwist
+,dnstwist_dns_active,http://pnbin.dia.in,netpnb.com,Punjab National Bank (PNB),Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://parivahan.in,parivahan.gov.in,parivahan sewa,Unlabeled,03-05-2026,,cse_match_score=1.000000;source_file=dnstwist
+,dnstwist_dns_active,http://portal.bsni.in,portal.bsnl.in,Bharat Sanchar Nigam Limited (BSNL),Unlabeled,03-05-2026,,cse_match_score=0.857143;source_file=dnstwist
+,dnstwist_dns_active,http://portal.snl.in,portal.bsnl.in,Bharat Sanchar Nigam Limited (BSNL),Unlabeled,03-05-2026,,cse_match_score=0.923077;source_file=dnstwist
+,dnstwist_dns_active,http://portal.bsl.in,portal.bsnl.in,Bharat Sanchar Nigam Limited (BSNL),Unlabeled,03-05-2026,,cse_match_score=0.923077;source_file=dnstwist
+,dnstwist_dns_active,http://portal.bsn.in,portal.bsnl.in,Bharat Sanchar Nigam Limited (BSNL),Unlabeled,03-05-2026,,cse_match_score=0.923077;source_file=dnstwist
+,dnstwist_dns_active,http://portal.b.snl.in,portal.bsnl.in,Bharat Sanchar Nigam Limited (BSNL),Unlabeled,03-05-2026,,cse_match_score=0.923077;source_file=dnstwist
+,dnstwist_dns_active,http://pnbintl.com,pnbint.com,Punjab National Bank (PNB),Unlabeled,03-05-2026,,cse_match_score=0.952381;source_file=dnstwist
+,dnstwist_dns_active,http://plbint.com,pnbint.com,Punjab National Bank (PNB),Unlabeled,03-05-2026,,cse_match_score=0.900000;source_file=dnstwist
+,dnstwist_dns_active,http://pncint.com,pnbint.com,Punjab National Bank (PNB),Unlabeled,03-05-2026,,cse_match_score=0.900000;source_file=dnstwist
+,dnstwist_dns_active,http://pjbint.com,pnbint.com,Punjab National Bank (PNB),Unlabeled,03-05-2026,,cse_match_score=0.900000;source_file=dnstwist
+,dnstwist_dns_active,http://pnbind.com,pnbint.com,Punjab National Bank (PNB),Unlabeled,03-05-2026,,cse_match_score=0.900000;source_file=dnstwist
+,dnstwist_dns_active,http://pnjint.com,pnbint.com,Punjab National Bank (PNB),Unlabeled,03-05-2026,,cse_match_score=0.900000;source_file=dnstwist
+,dnstwist_dns_active,http://pnb-int.com,pnbint.com,Punjab National Bank (PNB),Unlabeled,03-05-2026,,cse_match_score=1.000000;source_file=dnstwist
+,dnstwist_dns_active,http://pnbin.com,pnbint.com,Punjab National Bank (PNB),Unlabeled,03-05-2026,,cse_match_score=0.947368;source_file=dnstwist
+,dnstwist_dns_active,http://pbint.com,pnbint.com,Punjab National Bank (PNB),Unlabeled,03-05-2026,,cse_match_score=0.947368;source_file=dnstwist
+,dnstwist_dns_active,http://pnint.com,pnbint.com,Punjab National Bank (PNB),Unlabeled,03-05-2026,,cse_match_score=0.947368;source_file=dnstwist
+,dnstwist_dns_active,http://phbint.com,pnbint.com,Punjab National Bank (PNB),Unlabeled,03-05-2026,,cse_match_score=0.900000;source_file=dnstwist
+,dnstwist_dns_active,http://mnbint.com,pnbint.com,Punjab National Bank (PNB),Unlabeled,03-05-2026,,cse_match_score=0.900000;source_file=dnstwist
+,dnstwist_dns_active,http://pnhint.com,pnbint.com,Punjab National Bank (PNB),Unlabeled,03-05-2026,,cse_match_score=0.900000;source_file=dnstwist
+,dnstwist_dns_active,http://pnbent.com,pnbint.com,Punjab National Bank (PNB),Unlabeled,03-05-2026,,cse_match_score=0.900000;source_file=dnstwist
+,dnstwist_dns_active,http://retail.sbi.banke.in,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://retail.sbi.banki.in,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://retail.sbi.bankd.in,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://retail.sbi.banka.in,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://retail.sbi.bani.in,corp.onlinesbi.sbi,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://retail.sbi.fank.in,corp.onlinesbi.sbi,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://retail.sbi.bink.in,corp.onlinesbi.sbi,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://retail.sbi.rank.in,corp.onlinesbi.sbi,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://retail.sbi.bamk.in,corp.onlinesbi.sbi,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://retail.sbi.1bank.in,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://retail.sbi.ibank.in,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://retail.sbi.dark.in,corp.onlinesbi.sbi,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://retail.sbi.dank.in,corp.onlinesbi.sbi,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://retail.sbi.lbank.in,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://retail.sbi.nank.in,corp.onlinesbi.sbi,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://retail.sbi.bank-in.com,corp.onlinesbi.sbi,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://retail.sbi.bonk.in,corp.onlinesbi.sbi,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://retailnetbanking.icici.banke.in,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://retailnetbanking.icici.banki.in,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://retailnetbanking.icici.bankd.in,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://retailnetbanking.icici.banka.in,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://retailnetbanking.icici.bani.in,icici.bank.in,ICICI Bank,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://retailnetbanking.icici.fank.in,icici.bank.in,ICICI Bank,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://retailnetbanking.icici.bink.in,icici.bank.in,ICICI Bank,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://retailnetbanking.icici.rank.in,icici.bank.in,ICICI Bank,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://retailnetbanking.icici.bamk.in,icici.bank.in,ICICI Bank,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://retailnetbanking.icici.1bank.in,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://retailnetbanking.icici.ibank.in,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://retailnetbanking.icici.dark.in,icici.bank.in,ICICI Bank,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://retailnetbanking.icici.dank.in,icici.bank.in,ICICI Bank,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://retailnetbanking.icici.lbank.in,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://retailnetbanking.icici.nank.in,icici.bank.in,ICICI Bank,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://retailnetbanking.icici.bank-in.com,icici.bank.in,ICICI Bank,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://retailnetbanking.icici.bonk.in,icici.bank.in,ICICI Bank,Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://rbis.org.in,rbi.org.in,Reserve Bank of India (RBI),Unlabeled,03-05-2026,,cse_match_score=0.952381;source_file=dnstwist
+,dnstwist_dns_active,http://vbi.org.in,rbi.org.in,Reserve Bank of India (RBI),Unlabeled,03-05-2026,,cse_match_score=0.900000;source_file=dnstwist
+,dnstwist_dns_active,http://pbi.org.in,rbi.org.in,Reserve Bank of India (RBI),Unlabeled,03-05-2026,,cse_match_score=0.900000;source_file=dnstwist
+,dnstwist_dns_active,http://rbm.org.in,rbi.org.in,Reserve Bank of India (RBI),Unlabeled,03-05-2026,,cse_match_score=0.900000;source_file=dnstwist
+,dnstwist_dns_active,http://dbi.org.in,rbi.org.in,Reserve Bank of India (RBI),Unlabeled,03-05-2026,,cse_match_score=0.900000;source_file=dnstwist
+,dnstwist_dns_active,http://rib.org.in,rbi.org.in,Reserve Bank of India (RBI),Unlabeled,03-05-2026,,cse_match_score=0.900000;source_file=dnstwist
+,dnstwist_dns_active,http://re.bit.org.in,rebit.org.in,Reserve Bank of India (RBI),Unlabeled,03-05-2026,,cse_match_score=0.909091;source_file=dnstwist
+,dnstwist_dns_active,http://rebit.in,rebit.org.in,Reserve Bank of India (RBI),Unlabeled,03-05-2026,,cse_match_score=1.000000;source_file=dnstwist
+,dnstwist_dns_active,http://rac.gov.in,sac.gov.in,Indian Space Research Organisation (ISRO),Unlabeled,03-05-2026,,cse_match_score=0.900000;source_file=dnstwist
+,dnstwist_dns_active,http://ssc.gov.in,vssc.gov.in,Indian Space Research Organisation (ISRO),Unlabeled,03-05-2026,,cse_match_score=0.952381;source_file=dnstwist
+,dnstwist_dns_active,http://sac.in,sac.gov.in,Indian Space Research Organisation (ISRO),Unlabeled,03-05-2026,,cse_match_score=1.000000;source_file=dnstwist
+,dnstwist_dns_active,http://sbi.banke.in,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://sbi.banki.in,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://sbi.bankd.in,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://sbi.banka.in,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://sbi.bani.in,corp.onlinesbi.sbi,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://sbi.fank.in,corp.onlinesbi.sbi,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://sbi.bink.in,corp.onlinesbi.sbi,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://sbi.rank.in,corp.onlinesbi.sbi,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://sbi.bamk.in,corp.onlinesbi.sbi,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://sbi.1bank.in,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://sbi.ibank.in,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://sbi.dark.in,corp.onlinesbi.sbi,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://sbi.dank.in,corp.onlinesbi.sbi,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://sbi.lbank.in,airtelpayments.bank.in,Airtel,Unlabeled,03-05-2026,,cse_match_score=0.933333;source_file=dnstwist
+,dnstwist_dns_active,http://sbi.nank.in,corp.onlinesbi.sbi,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://sbi.bank-in.com,corp.onlinesbi.sbi,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://sbi.bonk.in,corp.onlinesbi.sbi,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist
+,dnstwist_dns_active,http://sbilif.co.in,sbilife.co.in,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.960000;source_file=dnstwist
+,dnstwist_dns_active,http://sblife.co.in,sbilife.co.in,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.960000;source_file=dnstwist
+,dnstwist_dns_active,http://sbil.co.in,sbi.co.in,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.947368;source_file=dnstwist
+,dnstwist_dns_active,http://sbib.co.in,sbi.co.in,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.947368;source_file=dnstwist
+,dnstwist_dns_active,http://sbic.co.in,sbi.co.in,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.947368;source_file=dnstwist
+,dnstwist_dns_active,http://sbit.co.in,sbi.co.in,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.947368;source_file=dnstwist
+,dnstwist_dns_active,http://wbi.co.in,sbi.co.in,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.888889;source_file=dnstwist
+,dnstwist_dns_active,http://sfi.co.in,sbi.co.in,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.888889;source_file=dnstwist
+,dnstwist_dns_active,http://sci.co.in,sbi.co.in,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.888889;source_file=dnstwist
+,dnstwist_dns_active,http://cbi.co.in,sbi.co.in,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.888889;source_file=dnstwist
+,dnstwist_dns_active,http://sba.co.in,sbi.co.in,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.888889;source_file=dnstwist
+,dnstwist_dns_active,http://sby.co.in,sbi.co.in,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.888889;source_file=dnstwist
+,dnstwist_dns_active,http://sibi.co.in,sbi.co.in,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.947368;source_file=dnstwist
+,dnstwist_dns_active,http://sdl.co.in,bsnl.co.in,Bharat Sanchar Nigam Limited (BSNL),Unlabeled,03-05-2026,,cse_match_score=0.842105;source_file=dnstwist
+,dnstwist_dns_active,http://scli.co.in,sbi.co.in,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.842105;source_file=dnstwist
+,dnstwist_dns_active,http://slbi.co.in,sbi.co.in,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.947368;source_file=dnstwist
+,dnstwist_dns_active,http://sdi.co.in,sbi.co.in,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.888889;source_file=dnstwist
+,dnstwist_dns_active,http://sbl.co.in,sbi.co.in,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.888889;source_file=dnstwist
+,dnstwist_dns_active,http://sdbi.co.in,sbi.co.in,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.947368;source_file=dnstwist
+,dnstwist_dns_active,http://sbgi.co.in,sbi.co.in,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.947368;source_file=dnstwist
+,dnstwist_dns_active,http://asbi.co.in,sbi.co.in,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.947368;source_file=dnstwist
+,dnstwist_dns_active,http://sgbi.co.in,sbi.co.in,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.947368;source_file=dnstwist
+,dnstwist_dns_active,http://shbi.co.in,sbi.co.in,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.947368;source_file=dnstwist
+,dnstwist_dns_active,http://snbi.co.in,sbi.co.in,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.947368;source_file=dnstwist
+,dnstwist_dns_active,http://svbi.co.in,sbi.co.in,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.947368;source_file=dnstwist
+,dnstwist_dns_active,http://sbbi.co.in,sbi.co.in,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.947368;source_file=dnstwist
+,dnstwist_dns_active,http://ssbi.co.in,sbi.co.in,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.947368;source_file=dnstwist
+,dnstwist_dns_active,http://shi.co.in,sbi.co.in,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.888889;source_file=dnstwist
+,dnstwist_dns_active,http://ybi.co.in,sbi.co.in,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.888889;source_file=dnstwist
+,dnstwist_dns_active,http://abi.co.in,sbi.co.in,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.888889;source_file=dnstwist
+,dnstwist_dns_active,http://sgi.co.in,sbi.co.in,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.888889;source_file=dnstwist
+,dnstwist_dns_active,http://ebi.co.in,sbi.co.in,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.888889;source_file=dnstwist
+,dnstwist_dns_active,http://svi.co.in,sbi.co.in,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.888889;source_file=dnstwist
+,dnstwist_dns_active,http://dbi.co.in,sbi.co.in,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.888889;source_file=dnstwist
+,dnstwist_dns_active,http://sbo.co.in,sbi.co.in,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.888889;source_file=dnstwist
+,dnstwist_dns_active,http://sbu.co.in,sbi.co.in,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.888889;source_file=dnstwist
+,dnstwist_dns_active,http://xbi.co.in,sbi.co.in,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.888889;source_file=dnstwist
+,dnstwist_dns_active,http://zbi.co.in,sbi.co.in,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.888889;source_file=dnstwist
+,dnstwist_dns_active,http://sib.co.in,sbi.co.in,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.888889;source_file=dnstwist
+,dnstwist_dns_active,http://bsi.co.in,sbi.co.in,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.888889;source_file=dnstwist
+,dnstwist_dns_active,http://sbi.in,sbi.co.in,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=1.000000;source_file=dnstwist
+,dnstwist_dns_active,http://sbe.co.in,sbi.co.in,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.888889;source_file=dnstwist
+,dnstwist_dns_active,http://sbicards.com,sbicard.com,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.956522;source_file=dnstwist
+,dnstwist_dns_active,http://sbacard.com,sbicard.com,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.909091;source_file=dnstwist
+,dnstwist_dns_active,http://sricard.com,sbicard.com,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.909091;source_file=dnstwist
+,dnstwist_dns_active,http://sbicare.com,sbicard.com,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.909091;source_file=dnstwist
+,dnstwist_dns_active,http://scicard.com,sbicard.com,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.909091;source_file=dnstwist
+,dnstwist_dns_active,http://sbicarf.com,sbicard.com,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.909091;source_file=dnstwist
+,dnstwist_dns_active,http://sdicard.com,sbicard.com,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.909091;source_file=dnstwist
+,dnstwist_dns_active,http://sabicard.com,sbicard.com,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.956522;source_file=dnstwist
+,dnstwist_dns_active,http://sbcard.com,sbicard.com,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.952381;source_file=dnstwist
+,dnstwist_dns_active,http://bicard.com,sbicard.com,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.952381;source_file=dnstwist
+,dnstwist_dns_active,http://sbicar.com,sbicard.com,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.952381;source_file=dnstwist
+,dnstwist_dns_active,http://sbicad.com,sbicard.com,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.952381;source_file=dnstwist
+,dnstwist_dns_active,http://sicard.com,sbicard.com,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.952381;source_file=dnstwist
+,dnstwist_dns_active,http://sbiard.com,sbicard.com,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.952381;source_file=dnstwist
+,dnstwist_dns_active,http://sbbicard.com,sbicard.com,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.956522;source_file=dnstwist
+,dnstwist_dns_active,http://sbicaard.com,sbicard.com,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.956522;source_file=dnstwist
+,dnstwist_dns_active,http://sbicarrd.com,sbicard.com,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.956522;source_file=dnstwist
+,dnstwist_dns_active,http://sbiccard.com,sbicard.com,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.956522;source_file=dnstwist
+,dnstwist_dns_active,http://sbiicard.com,sbicard.com,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.956522;source_file=dnstwist
+,dnstwist_dns_active,http://abicard.com,sbicard.com,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.909091;source_file=dnstwist
+,dnstwist_dns_active,http://sbicaed.com,sbicard.com,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.909091;source_file=dnstwist
+,dnstwist_dns_active,http://sbicatd.com,sbicard.com,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.909091;source_file=dnstwist
+,dnstwist_dns_active,http://sbicsrd.com,sbicard.com,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.909091;source_file=dnstwist
+,dnstwist_dns_active,http://sbivard.com,sbicard.com,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.909091;source_file=dnstwist
+,dnstwist_dns_active,http://shicard.com,sbicard.com,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.909091;source_file=dnstwist
+,dnstwist_dns_active,http://ebicard.com,sbicard.com,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.909091;source_file=dnstwist
+,dnstwist_dns_active,http://s.bicard.com,sbicard.com,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.952381;source_file=dnstwist
+,dnstwist_dns_active,http://sbicrad.com,sbicard.com,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.909091;source_file=dnstwist
+,dnstwist_dns_active,http://sibcard.com,sbicard.com,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.909091;source_file=dnstwist
+,dnstwist_dns_active,http://sbimfg.com,sbimf.com,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.947368;source_file=dnstwist
+,dnstwist_dns_active,http://sbimn.com,sbimf.com,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.888889;source_file=dnstwist
+,dnstwist_dns_active,http://sbamf.com,sbimf.com,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.888889;source_file=dnstwist
+,dnstwist_dns_active,http://sbimb.com,sbimf.com,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.888889;source_file=dnstwist
+,dnstwist_dns_active,http://srimf.com,sbimf.com,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.888889;source_file=dnstwist
+,dnstwist_dns_active,http://scimf.com,sbimf.com,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.888889;source_file=dnstwist
+,dnstwist_dns_active,http://sbimg.com,sbimf.com,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.888889;source_file=dnstwist
+,dnstwist_dns_active,http://bimf.com,sbimf.com,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.941176;source_file=dnstwist
+,dnstwist_dns_active,http://sbmf.com,sbimf.com,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.941176;source_file=dnstwist
+,dnstwist_dns_active,http://sbif.com,sbimf.com,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.941176;source_file=dnstwist
+,dnstwist_dns_active,http://sbim.com,sbimf.com,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.941176;source_file=dnstwist
+,dnstwist_dns_active,http://simf.com,sbimf.com,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.941176;source_file=dnstwist
+,dnstwist_dns_active,http://sbimt.com,sbimf.com,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.888889;source_file=dnstwist
+,dnstwist_dns_active,http://shimf.com,sbimf.com,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.888889;source_file=dnstwist
+,dnstwist_dns_active,http://abimf.com,sbimf.com,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.888889;source_file=dnstwist
+,dnstwist_dns_active,http://sbimc.com,sbimf.com,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.888889;source_file=dnstwist
+,dnstwist_dns_active,http://sbifm.com,sbimf.com,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.888889;source_file=dnstwist
+,dnstwist_dns_active,http://sbisecuri.ties.in,corp.onlinesbi.sbi,State Bank of India (SBI),Unlabeled,03-05-2026,,cse_match_score=0.860000;source_file=dnstwist

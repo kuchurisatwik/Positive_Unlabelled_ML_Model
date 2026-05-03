@@ -1,0 +1,2 @@
+url,domain,target_brand_domain,critical_sector_entity_name,source_label,source_file,source_row,dns_status,dns_check_pass,dns_resolves_to_ip,resolved_ips,cname_exists,cname_chain_length,dns_error,validation_status,validation_reason
+http://bweindia.com,bweindia.com,bseindia.com,BSE Ltd.,Unlabeled,cse_pu_candidates.csv,185,error,0,0,,0,0,A:LifetimeTimeout;AAAA:LifetimeTimeout;CNAME:LifetimeTimeout;socket:gaierror,dns_failed_skipped,DNS failed before feature extraction; excluded from ML input
