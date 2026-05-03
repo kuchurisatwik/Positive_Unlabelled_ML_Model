@@ -35,6 +35,28 @@ TRUTH_COLUMN_CANDIDATES = (
     "source_label",
 )
 
+EMPTY_FEATURE_COLUMNS = [
+    "url",
+    "target_brand_domain",
+    "validation_status",
+]
+
+MODEL_OUTPUT_COLUMNS = [
+    "standard_score",
+    "standard_threshold",
+    "standard_prediction",
+    "hardened_score",
+    "hardened_threshold",
+    "hardened_prediction",
+]
+
+CLASSIFICATION_OUTPUT_COLUMNS = [
+    "final_classification",
+    "classification_confidence",
+    "recommended_action",
+    "classification_reason",
+]
+
 
 def model_feature_frame(df: pd.DataFrame, feature_columns: list[str]) -> pd.DataFrame:
     values: dict[str, pd.Series] = {}
@@ -280,6 +302,9 @@ def score_feature_rows(
     standard_model_path: Path,
     hardened_model_path: Path,
 ) -> tuple[pd.DataFrame, pd.DataFrame]:
+    if df.empty:
+        return empty_score_frames(df)
+
     standard_scores = score_model(df, standard_model_path, "standard")
     hardened_scores = score_model(df, hardened_model_path, "hardened")
 
@@ -302,6 +327,37 @@ def score_feature_rows(
     return classified, scored_long
 
 
+def empty_score_frames(df: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame]:
+    classified = df.reset_index(drop=True).copy()
+    for column in EMPTY_FEATURE_COLUMNS:
+        if column not in classified.columns:
+            classified[column] = pd.Series(dtype="object")
+    for column in MODEL_OUTPUT_COLUMNS:
+        if column.endswith("_score") or column.endswith("_threshold"):
+            classified[column] = pd.Series(dtype="float64")
+        else:
+            classified[column] = pd.Series(dtype="int64")
+    for column in CLASSIFICATION_OUTPUT_COLUMNS:
+        classified[column] = pd.Series(dtype="object")
+
+    feature_columns = [
+        column
+        for column in classified.columns
+        if column not in MODEL_OUTPUT_COLUMNS and column not in CLASSIFICATION_OUTPUT_COLUMNS
+    ]
+    scored_long = pd.DataFrame(
+        columns=[
+            *feature_columns,
+            "model",
+            "score",
+            "threshold",
+            "prediction",
+            "feature_count",
+        ]
+    )
+    return classified, scored_long
+
+
 def score_feature_file(
     feature_path: Path,
     output_path: Path,
@@ -309,7 +365,10 @@ def score_feature_file(
     hardened_model_path: Path = DEFAULT_HARDENED_MODEL,
     long_output_path: Path | None = None,
 ) -> pd.DataFrame:
-    df = pd.read_csv(feature_path)
+    try:
+        df = pd.read_csv(feature_path)
+    except pd.errors.EmptyDataError:
+        df = pd.DataFrame(columns=EMPTY_FEATURE_COLUMNS)
     classified, scored_long = score_feature_rows(df, standard_model_path, hardened_model_path)
 
     output_path.parent.mkdir(parents=True, exist_ok=True)

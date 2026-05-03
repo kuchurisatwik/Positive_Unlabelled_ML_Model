@@ -1329,7 +1329,7 @@ def main() -> None:
 
     if not candidates:
         write_csv(OUTPUT_FILE, [], OUTPUT_COLUMNS)
-        write_csv(OUTPUT_AUDIT_FILE, [], None)
+        write_csv(OUTPUT_AUDIT_FILE, [], OUTPUT_COLUMNS)
         write_csv(OUTPUT_DNS_FAILED_FILE, cse_unmatched, DNS_FAILED_COLUMNS)
         log.info("No non-official candidate URLs found.")
         return
@@ -1340,7 +1340,7 @@ def main() -> None:
 
     if not candidates:
         write_csv(OUTPUT_FILE, [], OUTPUT_COLUMNS)
-        write_csv(OUTPUT_AUDIT_FILE, [], None)
+        write_csv(OUTPUT_AUDIT_FILE, [], OUTPUT_COLUMNS)
         log.info("No DNS-active candidate URLs left for feature extraction.")
         return
 
