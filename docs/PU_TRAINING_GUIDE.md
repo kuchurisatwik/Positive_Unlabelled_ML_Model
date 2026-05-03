@@ -188,7 +188,7 @@ Suggested values:
 
 ## Step 2. Run Feature Extraction
 
-`run_pipeline.py` now CSE-matches the input rows itself. Point `PIPELINE_INPUT_DIR` at either a raw feed/local folder or at `input/pu_candidates` if you generated `cse_pu_candidates.csv`.
+`run_pipeline.py` now CSE-matches the input rows itself and defaults to `input/dataset`. Point `PIPELINE_INPUT_DIR` at another folder only if you want to override that default, for example `input/pu_candidates` after generating `cse_pu_candidates.csv`.
 
 You can still set `PIPELINE_INPUT_DIR` explicitly if you want to be extra clear in the terminal.
 
@@ -203,7 +203,7 @@ Before expensive feature extraction starts, `run_pipeline.py` now runs a DNS pre
 Local safe CPU settings:
 
 ```powershell
-$env:PIPELINE_INPUT_DIR = "input\pu_candidates"
+$env:PIPELINE_INPUT_DIR = "input\dataset"
 $env:PIPELINE_OUTPUT_DIR = "output"
 $env:PIPELINE_CONCURRENCY = "8"
 $env:PIPELINE_HTTP_CONCURRENCY = "8"
@@ -430,9 +430,7 @@ cd C:\Users\sathwik.kusuri\Documents\ai-challenge-ijmm\scripts\model_training_da
 
 .\venv\Scripts\python.exe -m pip install -r requirements.txt
 
-.\venv\Scripts\python.exe collect_cse_pu_urls.py --fetch-feeds
-
-$env:PIPELINE_INPUT_DIR = "input\pu_candidates"
+$env:PIPELINE_INPUT_DIR = "input\dataset"
 $env:PIPELINE_OUTPUT_DIR = "output"
 $env:PIPELINE_CONCURRENCY = "8"
 $env:PIPELINE_HTTP_CONCURRENCY = "8"

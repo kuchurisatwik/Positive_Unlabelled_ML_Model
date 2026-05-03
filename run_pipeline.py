@@ -50,10 +50,8 @@ logging.basicConfig(
 )
 log = logging.getLogger("pipeline")
 
-DEFAULT_PU_INPUT_DIR = os.path.join(SCRIPT_DIR, "input", "pu_candidates")
 DEFAULT_DATASET_INPUT_DIR = os.path.join(SCRIPT_DIR, "input", "dataset")
-DEFAULT_PU_INPUT_FILE = os.path.join(DEFAULT_PU_INPUT_DIR, "cse_pu_candidates.csv")
-DEFAULT_INPUT_DIR = DEFAULT_PU_INPUT_DIR if os.path.exists(DEFAULT_PU_INPUT_FILE) else DEFAULT_DATASET_INPUT_DIR
+DEFAULT_INPUT_DIR = DEFAULT_DATASET_INPUT_DIR
 
 INPUT_DIR = os.environ.get("PIPELINE_INPUT_DIR", DEFAULT_INPUT_DIR)
 OUTPUT_DIR = os.environ.get("PIPELINE_OUTPUT_DIR", os.path.join(SCRIPT_DIR, "output"))

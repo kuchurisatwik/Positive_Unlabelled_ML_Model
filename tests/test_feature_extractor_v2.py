@@ -101,6 +101,12 @@ class FeatureExtractorV2Tests(unittest.TestCase):
         ]
         self.assertEqual(run_pipeline.OUTPUT_COLUMNS, expected_columns)
 
+    def test_pipeline_default_input_dir_is_dataset_folder(self) -> None:
+        self.assertEqual(
+            os.path.normpath(run_pipeline.DEFAULT_INPUT_DIR),
+            os.path.normpath(os.path.join(run_pipeline.SCRIPT_DIR, "input", "dataset")),
+        )
+
     def test_enforce_schema_fills_all_defaults(self) -> None:
         row = run_pipeline.enforce_schema({"lexical_similarity_score": 0.88})
         self.assertEqual(list(row.keys()), run_pipeline.OUTPUT_COLUMNS)

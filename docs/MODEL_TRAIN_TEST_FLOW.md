@@ -154,10 +154,10 @@ If you only want local input files from `input\dataset`:
 
 ### Step 2. Extract training features
 
-Run the pipeline against either a raw feed/local folder or the PU candidate folder. The pipeline loads `input\cse\cse_list.csv`, fills the CSE target fields, and filters rows below `PIPELINE_CSE_MATCH_THRESHOLD` before feature extraction.
+By default, `run_pipeline.py` reads raw feed/local files from `input\dataset`. The pipeline loads `input\cse\cse_list.csv`, fills the CSE target fields, and filters rows below `PIPELINE_CSE_MATCH_THRESHOLD` before feature extraction. Set `PIPELINE_INPUT_DIR` only when you want to use another folder, such as `input\pu_candidates`.
 
 ```powershell
-$env:PIPELINE_INPUT_DIR = "input\pu_candidates"
+$env:PIPELINE_INPUT_DIR = "input\dataset"
 $env:PIPELINE_OUTPUT_DIR = "output"
 $env:PIPELINE_OUTPUT_FILE = "output\enriched_features_v2.csv"
 $env:PIPELINE_OUTPUT_AUDIT_FILE = "output\enriched_features_v2_audit.csv"
@@ -417,8 +417,7 @@ Import-Csv output\test_results\model_classification_results.csv |
 Training:
 
 ```text
-collect_cse_pu_urls.py
-  -> input\pu_candidates\cse_pu_candidates.csv
+input\dataset\*.csv / *.xlsx / *.txt
 run_pipeline.py
   -> output\enriched_features_v2_audit.csv
 train_pu_model.py
