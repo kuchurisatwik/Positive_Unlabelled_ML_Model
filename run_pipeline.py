@@ -10,6 +10,7 @@ import time
 from collections import Counter, defaultdict
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import dataclass
+import socket
 from urllib.parse import urlparse
 
 import aiohttp
@@ -39,12 +40,31 @@ from extract.feature_extractor import (
     finalize_feature_rows,
     find_favicon_url,
     is_official_domain,
-    lookup_dns,
     normalize_hostname,
     probe_tls,
     registered_domain,
 )
 from extract.rdap_whois import RDAPClient
+
+def simple_dns_check(domain: str) -> DnsResult:
+    try:
+        ip = socket.gethostbyname(domain)
+        return DnsResult(
+            dns_check_pass=1,
+            dns_resolves_to_ip=1,
+            resolved_ips=ip,
+            cname_exists=0,
+            cname_chain_length=0,
+            dns_error="",
+            status="success"
+        )
+    except Exception as exc:
+        return DnsResult(
+            dns_check_pass=0,
+            dns_resolves_to_ip=0,
+            dns_error=type(exc).__name__,
+            status="error"
+        )
 
 logging.basicConfig(
     level=logging.INFO,
@@ -108,7 +128,7 @@ DNS_TIMEOUT = _float_env("PIPELINE_DNS_TIMEOUT", DEFAULT_DNS_TIMEOUT)
 DNS_LIFETIME = _float_env("PIPELINE_DNS_LIFETIME", DEFAULT_DNS_LIFETIME)
 DNS_RETRIES = _nonnegative_int_env("PIPELINE_DNS_RETRIES", DEFAULT_DNS_RETRIES)
 CSE_MATCH_THRESHOLD = _float_env("PIPELINE_CSE_MATCH_THRESHOLD", 0.75)
-REQUIRE_CSE_MATCH = os.environ.get("PIPELINE_REQUIRE_CSE_MATCH", "1").strip().lower() not in {"0", "false", "no"}
+REQUIRE_CSE_MATCH = os.environ.get("PIPELINE_REQUIRE_CSE_MATCH", "0").strip().lower() not in {"0", "false", "no"}
 FAVICON_MAX_BYTES = 128_000
 
 
@@ -661,14 +681,7 @@ def prefilter_dns_active_contexts(contexts: list[UrlContext]) -> tuple[list[UrlC
     )
 
     def check(context: UrlContext) -> DnsResult:
-        return lookup_dns(
-            context.detected_domain,
-            context.hosting_ip,
-            context.dns_records,
-            timeout=DNS_TIMEOUT,
-            lifetime=DNS_LIFETIME,
-            retries=DNS_RETRIES,
-        )
+        return simple_dns_check(context.detected_domain)
 
     with ThreadPoolExecutor(max_workers=workers) as executor:
         future_to_item = {
@@ -1088,13 +1101,8 @@ class AsyncFeatureCache:
         try:
             async with self.dns_sem:
                 return await asyncio.to_thread(
-                    lookup_dns,
-                    context.detected_domain,
-                    context.hosting_ip,
-                    context.dns_records,
-                    DNS_TIMEOUT,
-                    DNS_LIFETIME,
-                    DNS_RETRIES,
+                    simple_dns_check,
+                    context.detected_domain
                 )
         except Exception as exc:
             return DnsResult(dns_error=type(exc).__name__, status="error")

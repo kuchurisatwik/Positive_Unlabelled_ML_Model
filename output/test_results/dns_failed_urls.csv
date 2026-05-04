@@ -1,2 +1,2 @@
 url,domain,target_brand_domain,critical_sector_entity_name,source_label,source_file,source_row,dns_status,dns_check_pass,dns_resolves_to_ip,resolved_ips,cname_exists,cname_chain_length,dns_error,validation_status,validation_reason
-http://hdfcsecproper.net,hdfcsecproper.net,hdfc.bank.in,HDFC Bank,,test_dataset.csv,5,error,0,0,,0,0,A:NXDOMAIN;AAAA:NXDOMAIN;CNAME:NXDOMAIN;socket:gaierror,dns_failed_skipped,DNS failed before feature extraction; excluded from ML input
+http://hdfcsecproper.net,hdfcsecproper.net,hdfc.bank.in,HDFC Bank,,test_dataset.csv,5,error,0,0,,0,0,gaierror,dns_failed_skipped,DNS failed before feature extraction; excluded from ML input
