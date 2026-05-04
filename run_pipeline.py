@@ -412,12 +412,7 @@ def _infer_source_label(row: pd.Series, source_file: str) -> str:
     if explicit:
         return explicit
 
-    source_text = " ".join(
-        [
-            source_file,
-            _first(row, "Source of detection", "source_of_detection", "source"),
-        ]
-    ).lower()
+    source_text = source_file.lower()
     if "openphish" in source_text or "phishtank" in source_text:
         return "Phishing"
     if "dnstwist" in source_text:
@@ -453,13 +448,6 @@ def _row_to_context(row: pd.Series, source_file: str, source_row: int) -> UrlCon
         hosting_isp=_first(row, "Hosting ISP"),
         hosting_country=_first(row, "Hosting Country"),
         dns_records=_first(row, "DNS Records (if any)", "DNS Records"),
-        evidence_file=_first(row, "Evidence file name"),
-        detection_date=_first(row, "Date of detection (DD-MM-YYYY)", "Detection Date"),
-        detection_time=_first(row, "Time of detection (HH-MM-SS)", "Detection Time"),
-        sandbox_verdict=_first(row, "Sandbox Verdict"),
-        sandbox_reason=_first(row, "Sandbox Reason"),
-        application_id=_first(row, "Application_ID"),
-        source_of_detection=_first(row, "Source of detection"),
         remarks=_first(row, "Remarks"),
         source_file=source_file,
         source_row=source_row,
@@ -488,17 +476,6 @@ def _merge_context(existing: UrlContext, incoming: UrlContext) -> UrlContext:
             continue
         setattr(existing, field, getattr(incoming, field))
 
-    if incoming.detection_date and incoming.detection_date >= existing.detection_date:
-        for field in (
-            "detection_date",
-            "detection_time",
-            "evidence_file",
-            "sandbox_verdict",
-            "sandbox_reason",
-            "source_file",
-            "source_row",
-        ):
-            setattr(existing, field, getattr(incoming, field))
     return existing
 
 
@@ -524,7 +501,10 @@ def load_input_contexts(input_dir: str) -> list[UrlContext]:
                     values = [line.strip() for line in handle if line.strip() and not line.lstrip().startswith("#")]
                 df = pd.DataFrame({"url": values})
             elif file_name.lower().endswith(".csv"):
-                df = pd.read_csv(path)
+                try:
+                    df = pd.read_csv(path, encoding="utf-8-sig")
+                except UnicodeDecodeError:
+                    df = pd.read_csv(path, encoding="latin1")
             else:
                 df = pd.read_excel(path)
         except Exception as exc:

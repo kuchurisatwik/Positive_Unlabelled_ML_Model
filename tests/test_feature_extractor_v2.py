@@ -215,7 +215,6 @@ class FeatureExtractorV2Tests(unittest.TestCase):
             target_domain="axis.bank.in",
             cse_name="Axis Bank",
             source_label="Suspected",
-            detection_date="2026-03-22",
         )
         fetch = FetchResult(
             html=(
@@ -241,7 +240,6 @@ class FeatureExtractorV2Tests(unittest.TestCase):
             target_domain="axis.bank.in",
             cse_name="Axis Bank",
             source_label="Suspected",
-            detection_date="2026-03-22",
         )
         fetch = FetchResult(
             html="<html><form><input type='password'></form><img alt='site logo'></html>",
@@ -271,17 +269,17 @@ class FeatureExtractorV2Tests(unittest.TestCase):
             "html_dom_hash": "samehash",
         }
         rows = [
-            {**base, "domain": "one.example", "detection_date": "2026-03-01"},
-            {**base, "domain": "two.example", "detection_date": "2026-03-05"},
-            {**base, "domain": "three.example", "detection_date": "2026-03-07"},
-            {**base, "domain": "old.example", "detection_date": "2026-03-20"},
+            {**base, "domain": "one.example"},
+            {**base, "domain": "two.example"},
+            {**base, "domain": "three.example"},
+            {**base, "domain": "old.example"},
         ]
         _, audit_rows = finalize_feature_rows(rows)
         by_domain = {row["domain"]: row for row in audit_rows}
-        self.assertEqual(by_domain["one.example"]["same_html_hash_domain_count_7d"], 3)
+        self.assertEqual(by_domain["one.example"]["same_html_hash_domain_count_7d"], 4)
         self.assertEqual(by_domain["one.example"]["phishing_campaign"], 1)
-        self.assertEqual(by_domain["old.example"]["same_html_hash_domain_count_7d"], 1)
-        self.assertEqual(by_domain["old.example"]["phishing_campaign"], 0)
+        self.assertEqual(by_domain["old.example"]["same_html_hash_domain_count_7d"], 4)
+        self.assertEqual(by_domain["old.example"]["phishing_campaign"], 1)
 
     def test_failed_dns_still_returns_full_schema_row(self) -> None:
         context = UrlContext(
@@ -289,7 +287,6 @@ class FeatureExtractorV2Tests(unittest.TestCase):
             detected_domain="axis-login.example.com",
             target_domain="axis.bank.in",
             cse_name="Axis Bank",
-            detection_date="2026-03-22",
         )
         fetch = FetchResult(
             html="<html><title>Axis</title></html>",
@@ -321,7 +318,6 @@ class FeatureExtractorV2Tests(unittest.TestCase):
             detected_domain="axis-login.example.com",
             target_domain="axis.bank.in",
             cse_name="Axis Bank",
-            detection_date="2026-03-22",
         )
         fetch = FetchResult(
             html="<html><title>Axis</title></html>",
@@ -354,7 +350,6 @@ class FeatureExtractorV2Tests(unittest.TestCase):
             detected_domain="axis-login.example.com",
             target_domain="axis.bank.in",
             cse_name="Axis Bank",
-            detection_date="2026-03-22",
         )
         fetch = FetchResult(final_url=context.url, status="error")
         domain_info = DomainInfo(
@@ -476,7 +471,6 @@ class FeatureExtractorV2Tests(unittest.TestCase):
             detected_domain="axis-login.example.com",
             target_domain="axis.bank.in",
             cse_name="Axis Bank",
-            detection_date="2026-03-22",
         )
         row = extract_features_from_prefetch(
             context,
@@ -502,14 +496,14 @@ class FeatureExtractorV2Tests(unittest.TestCase):
         self.assertEqual(row["ct_log_first_seen_days"], -1)
 
     def test_dns_prefilter_excludes_failed_domains_from_extraction(self) -> None:
-        original_lookup_dns = run_pipeline.lookup_dns
+        original_lookup_dns = run_pipeline.simple_dns_check
 
         def fake_lookup_dns(domain, hosting_ip="", dns_records="", **kwargs):
             if domain == "dead.example":
                 return DnsResult(status="error", dns_error="fixture")
             return DnsResult(status="success", dns_check_pass=1, dns_resolves_to_ip=1, resolved_ips="203.0.113.9")
 
-        run_pipeline.lookup_dns = fake_lookup_dns
+        run_pipeline.simple_dns_check = fake_lookup_dns
         try:
             active, failed = run_pipeline.prefilter_dns_active_contexts(
                 [
@@ -518,7 +512,7 @@ class FeatureExtractorV2Tests(unittest.TestCase):
                 ]
             )
         finally:
-            run_pipeline.lookup_dns = original_lookup_dns
+            run_pipeline.simple_dns_check = original_lookup_dns
 
         self.assertEqual([context.detected_domain for context in active], ["live.example"])
         self.assertEqual(len(failed), 1)
@@ -613,7 +607,6 @@ class FeatureExtractorV2Tests(unittest.TestCase):
             detected_domain="axis-login.example.com",
             target_domain="axis.bank.in",
             cse_name="Axis Bank",
-            detection_date="2026-03-22",
         )
         fav = favicon_hash(_PNG_BYTES, "")
         row = extract_features_from_prefetch(

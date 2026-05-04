@@ -97,13 +97,7 @@ class UrlContext:
     hosting_isp: str = ""
     hosting_country: str = ""
     dns_records: str = ""
-    evidence_file: str = ""
-    detection_date: str = ""
-    detection_time: str = ""
-    sandbox_verdict: str = ""
-    sandbox_reason: str = ""
-    application_id: str = ""
-    source_of_detection: str = ""
+
     remarks: str = ""
     source_file: str = ""
     source_row: int = 0
@@ -901,7 +895,7 @@ def extract_features_from_prefetch(
 ) -> dict[str, Any]:
     url = ensure_url(context.url)
     domain = normalize_hostname(context.detected_domain or url)
-    observation = parse_observation_date(context.detection_date)
+    observation = parse_observation_date("")
     lexical = _safe_call(
         {
             "lexical_similarity_score": 0.0,
@@ -963,12 +957,7 @@ def extract_features_from_prefetch(
         "source_label": _source_label_normalized(context.source_label),
         "source_file": context.source_file,
         "source_row": context.source_row,
-        "detection_date": context.detection_date,
-        "evidence_file": context.evidence_file,
-        "sandbox_verdict": context.sandbox_verdict,
-        "sandbox_reason": context.sandbox_reason,
-        "application_id": context.application_id,
-        "source_of_detection": context.source_of_detection,
+
         **_binary_url_features(url, domain),
         **lexical,
         "dns_check_pass": dns.dns_check_pass,
@@ -1111,14 +1100,14 @@ def finalize_feature_rows(rows: list[dict[str, Any]]) -> tuple[list[dict[str, An
         domain = str(row.get("domain") or "")
         if html_hash and domain:
             hash_to_observations.setdefault(html_hash, []).append(
-                (domain, parse_observation_date(row.get("detection_date")))
+                (domain, parse_observation_date(""))
             )
 
     finalized: list[dict[str, Any]] = []
     for row in rows:
         html_hash = str(row.get("html_dom_hash") or "")
         if html_hash:
-            observation = parse_observation_date(row.get("detection_date"))
+            observation = parse_observation_date("")
             domains_in_window = {
                 domain
                 for domain, seen_date in hash_to_observations.get(html_hash, [])

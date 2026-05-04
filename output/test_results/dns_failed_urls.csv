@@ -1,2 +1,3 @@
 url,domain,target_brand_domain,critical_sector_entity_name,source_label,source_file,source_row,dns_status,dns_check_pass,dns_resolves_to_ip,resolved_ips,cname_exists,cname_chain_length,dns_error,validation_status,validation_reason
-http://hdfcsecproper.net,hdfcsecproper.net,hdfc.bank.in,HDFC Bank,,test_dataset.csv,5,error,0,0,,0,0,gaierror,dns_failed_skipped,DNS failed before feature extraction; excluded from ML input
+http://uidaiuclservicegov.com,uidaiuclservicegov.com,uidai.gov.in,Unique Identification Authority of India (UIDAI),,test_dataset.xlsx,2,error,0,0,,0,0,gaierror,dns_failed_skipped,DNS failed before feature extraction; excluded from ML input
+http://airtelaeps.in.mydreamco.shop,airtelaeps.in.mydreamco.shop,airindia.com,Air India,,test_dataset.xlsx,8,error,0,0,,0,0,gaierror,dns_failed_skipped,DNS failed before feature extraction; excluded from ML input
