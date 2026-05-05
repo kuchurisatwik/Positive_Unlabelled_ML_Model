@@ -87,9 +87,6 @@ HARDENED_EXCLUDED_FEATURE_COLUMNS = {
     "logo_brand_domain_mismatch",
     "visual_brand_domain_mismatch",
     "no_brand_visual_claim",
-    "favicon_similarity_score",
-    "logo_similarity_score",
-    "html_dom_similarity_score",
     "same_html_hash_domain_count_7d",
 }
 
