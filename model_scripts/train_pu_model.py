@@ -10,7 +10,14 @@ import numpy as np
 import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import f1_score, precision_score, recall_score
-from sklearn.model_selection import GroupShuffleSplit, KFold, train_test_split
+from sklearn.model_selection import (
+    GroupShuffleSplit,
+    KFold,
+    train_test_split,
+    StratifiedKFold,
+    RandomizedSearchCV,
+    cross_val_predict,
+)
 
 SCRIPT_DIR = Path(__file__).resolve().parent
 DEFAULT_FEATURES = SCRIPT_DIR.parent / "output" / "enriched_features_v2_audit.csv"
@@ -38,6 +45,7 @@ LEAK_OR_REVIEW_COLUMNS = {
     "registered_domain",
     "resolved_ips",
     "favicon_hash",
+    "logo_hash",
     "html_dom_hash",
     "fetch_error",
     "dns_error",
@@ -79,9 +87,9 @@ HARDENED_EXCLUDED_FEATURE_COLUMNS = {
     "logo_brand_domain_mismatch",
     "visual_brand_domain_mismatch",
     "no_brand_visual_claim",
-    "favicon_hash_matches_target_brand",
-    "favicon_hash_matches_known_phish",
-    "html_dom_hash_matches_known_phish",
+    "favicon_similarity_score",
+    "logo_similarity_score",
+    "html_dom_similarity_score",
     "same_html_hash_domain_count_7d",
 }
 
@@ -568,9 +576,21 @@ def train_pu_model(
     prelim_indices = np.concatenate([pos_train, unlabeled_indices])
     prelim_y = np.concatenate([np.ones(len(pos_train), dtype=int), np.zeros(len(unlabeled_indices), dtype=int)])
     prelim_model = fit_random_forest(n_estimators, random_state, n_jobs)
-    prelim_model.fit(X.iloc[prelim_indices], prelim_y)
+    
+    # Use cross_val_predict for out-of-fold, unbiased probabilities for the preliminary model
+    n_splits = max(2, min(5, np.bincount(prelim_y).min()))
+    cv = StratifiedKFold(n_splits=n_splits, shuffle=True, random_state=random_state)
+    all_prelim_probs = cross_val_predict(
+        prelim_model, 
+        X.iloc[prelim_indices], 
+        prelim_y, 
+        cv=cv, 
+        method='predict_proba', 
+        n_jobs=n_jobs
+    )[:, 1]
+    
+    unlabeled_probabilities = all_prelim_probs[len(pos_train):]
 
-    unlabeled_probabilities = prelim_model.predict_proba(X.iloc[unlabeled_indices])[:, 1]
     reliable_negative_indices, cutoff = select_reliable_negative_indices(
         unlabeled_indices=unlabeled_indices,
         unlabeled_probabilities=unlabeled_probabilities,
@@ -587,8 +607,29 @@ def train_pu_model(
 
     final_train_indices = np.concatenate([pos_train, rn_train])
     final_y = np.concatenate([np.ones(len(pos_train), dtype=int), np.zeros(len(rn_train), dtype=int)])
-    final_model = fit_random_forest(n_estimators, random_state + 11, n_jobs)
-    final_model.fit(X.iloc[final_train_indices], final_y)
+    
+    # Hyperparameter tuning for the final Random Forest
+    param_dist = {
+        "n_estimators": [100, 200, 300],
+        "max_depth": [None, 10, 20],
+        "min_samples_split": [2, 5],
+        "min_samples_leaf": [1, 2],
+        "class_weight": ["balanced_subsample", "balanced"]
+    }
+    
+    cv_folds = max(2, min(3, np.bincount(final_y).min()))
+    base_rf = RandomForestClassifier(random_state=random_state + 11, n_jobs=n_jobs)
+    search = RandomizedSearchCV(
+        base_rf, 
+        param_distributions=param_dist, 
+        n_iter=10, 
+        cv=cv_folds, 
+        scoring="f1", 
+        random_state=random_state + 12, 
+        n_jobs=n_jobs
+    )
+    search.fit(X.iloc[final_train_indices], final_y)
+    final_model = search.best_estimator_
 
     validation_indices = np.concatenate([pos_val, rn_val])
     validation_y = np.concatenate([np.ones(len(pos_val), dtype=int), np.zeros(len(rn_val), dtype=int)])
@@ -621,6 +662,7 @@ def train_pu_model(
             "reliable_negatives": int(len(rn_val)),
         },
         "threshold_table": threshold_table,
+        "best_params": search.best_params_,
     }
 
     return {
@@ -800,22 +842,63 @@ def main() -> None:
     summary_path = output_dir / "pu_training_summary.json"
     summary_path.write_text(json.dumps(summary, indent=2), encoding="utf-8")
 
-    print(f"Rows: {summary['rows']}")
-    print(f"Variant: {summary['model_variant']}")
-    print(f"Positive rows: {summary['positive_rows']}")
-    print(f"Unlabeled rows: {summary['unlabeled_rows']}")
-    print(f"Reliable negatives: {summary['reliable_negative_rows']}")
-    print(f"Feature count: {summary['feature_count']}")
-    print(f"Selected threshold: {summary['threshold']:.3f}")
-    print(f"Validation: {summary['validation']}")
+    # Extract and save feature importances
+    importances = result["model"].feature_importances_
+    importance_df = pd.DataFrame({
+        "feature": result["feature_columns"],
+        "importance": importances
+    }).sort_values("importance", ascending=False)
+    importance_path = output_dir / "pu_feature_importances.csv"
+    importance_df.to_csv(importance_path, index=False)
+
+    print("\n" + "="*55)
+    print(" 🚀 PU MODEL TRAINING COMPLETE")
+    print("="*55)
+    print(f"{'Total Rows:':<25} {summary['rows']}")
+    print(f"{'Model Variant:':<25} {summary['model_variant']}")
+    print(f"{'Positive Rows:':<25} {summary['positive_rows']}")
+    print(f"{'Unlabeled Rows:':<25} {summary['unlabeled_rows']}")
+    print(f"{'Reliable Negatives:':<25} {summary['reliable_negative_rows']}")
+    print(f"{'Feature Count:':<25} {summary['feature_count']}")
+    
+    print("\n--- BEST HYPERPARAMETERS ---")
+    for key, val in summary['best_params'].items():
+        print(f" {key:<23}: {val}")
+
+    print(f"\n{'Selected Threshold:':<25} {summary['threshold']:.3f}")
+    
+    print("\n--- VALIDATION METRICS ---")
+    val_metrics = summary["validation"]
+    print(f"{'Accuracy:':<20} {val_metrics.get('accuracy', 0.0):.4f}")
+    print(f"{'Precision:':<20} {val_metrics.get('precision', 0.0):.4f}")
+    print(f"{'Recall:':<20} {val_metrics.get('recall', 0.0):.4f}")
+    print(f"{'Specificity:':<20} {val_metrics.get('specificity', 0.0):.4f}")
+    print(f"{'F1 Score:':<20} {val_metrics.get('f1', 0.0):.4f}")
+    print(f"{'Balanced Accuracy:':<20} {val_metrics.get('balanced_accuracy', 0.0):.4f}")
+
     if summary.get("kfold_cross_validation"):
         cv_summary = summary["kfold_cross_validation"]
         if "overall" in cv_summary:
-            print(f"K-fold CV: {cv_summary['overall']}")
+            cv_overall = cv_summary['overall']
+            print("\n--- K-FOLD CV OVERALL METRICS ---")
+            print(f"{'Accuracy:':<20} {cv_overall.get('accuracy', 0.0):.4f}")
+            print(f"{'Precision:':<20} {cv_overall.get('precision', 0.0):.4f}")
+            print(f"{'Recall:':<20} {cv_overall.get('recall', 0.0):.4f}")
+            print(f"{'F1 Score:':<20} {cv_overall.get('f1', 0.0):.4f}")
+
     if summary.get("group_holdout"):
-        print(f"Group holdout columns: {', '.join(summary['group_holdout'])}")
-    print(f"Model: {model_path.resolve()}")
-    print(f"Scores: {scored_path.resolve()}")
+        print(f"\nGroup holdout columns: {', '.join(summary['group_holdout'])}")
+
+    print("\n--- TOP 10 IMPORTANT FEATURES ---")
+    top_features = importance_df.head(10)
+    for idx, row in top_features.iterrows():
+        print(f" - {row['feature']:<30} : {row['importance']:.4f}")
+
+    print("\n--- ARTIFACTS SAVED ---")
+    print(f"Model:                {model_path.resolve()}")
+    print(f"Feature Importances:  {importance_path.resolve()}")
+    print(f"Scores:               {scored_path.resolve()}")
+    print("="*55 + "\n")
 
 
 if __name__ == "__main__":
