@@ -50,13 +50,13 @@ LEAK_OR_REVIEW_COLUMNS = {
     "fetch_error",
     "dns_error",
     "tls_error",
-    "dns_status",
-    "http_status",
-    "rdap_status",
-    "whois_status",
-    "tls_status",
-    "page_status",
-    "extraction_status",
+    "dns_status",   #if we add this "#", then our model predict patterns learn to detect it as phishing.
+    "http_status",  #if we add this "#", then our model predict patterns learn to detect it as phishing.
+    "rdap_status",  #if we add this "#", then our model predict patterns learn to detect it as phishing.
+    "whois_status", #if we add this "#", then our model predict patterns learn to detect it as phishing.
+    "tls_status",   #if we add this "#", then our model predict patterns learn to detect it as phishing.
+    "page_status",  #if we add this "#", then our model predict patterns learn to detect it as phishing.
+    "extraction_status", #if we add this "#", then our model predict patterns learn to detect it as phishing.
     "validation_status",
     "validation_reason",
     "label",
