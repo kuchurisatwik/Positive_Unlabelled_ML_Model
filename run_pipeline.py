@@ -16,6 +16,7 @@ from urllib.parse import urlparse
 import aiohttp
 import pandas as pd
 from tqdm import tqdm
+from playwright.async_api import async_playwright
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 if SCRIPT_DIR not in sys.path:
@@ -807,6 +808,7 @@ def _reference_file_uses_algorithm(path: str, expected_algorithm: str, hash_colu
         return False
 
 
+def cse_reference_files_exist(data_dir: str = DATA_DIR) -> bool:
     return _reference_file_uses_algorithm(
         os.path.join(data_dir, "brand_favicon_hashes.csv"),
         FAVICON_HASH_ALGORITHM,
@@ -905,6 +907,83 @@ async def extract_cse_reference_hashes(
         favicon_rows.append(fav_row)
         dom_rows.append(dom_row)
         logo_rows.append(log_row)
+
+    failed_domains = [
+        dom_row["domain"] for dom_row in dom_rows
+        if dom_row["status"] != "success" or not dom_row.get("html_dom_hash")
+    ]
+
+    if failed_domains:
+        log.info("Playwright fallback for %d failed CSE domains...", len(failed_domains))
+        try:
+            async with async_playwright() as p:
+                browser = await p.chromium.launch(headless=True)
+                context = await browser.new_context(
+                    user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+                )
+                async with aiohttp.ClientSession(
+                    connector=aiohttp.TCPConnector(limit=min(HTTP_CONCURRENCY, 25), ttl_dns_cache=300),
+                    timeout=aiohttp.ClientTimeout(total=HTTP_TIMEOUT, connect=5),
+                    headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"}
+                ) as fallback_session:
+                    pw_sem = asyncio.Semaphore(10)
+
+                    async def process_fallback(domain: str) -> tuple | None:
+                        async with pw_sem:
+                            try:
+                                page = await context.new_page()
+                                try:
+                                    await page.goto(f"https://{domain}", wait_until="networkidle", timeout=10000)
+                                except Exception:
+                                    await page.goto(f"http://{domain}", wait_until="networkidle", timeout=10000)
+                                
+                                html = await page.content()
+                                final_url = page.url
+                                await page.close()
+                                
+                                fav_url = find_favicon_url(final_url, html)
+                                fav_bytes = await fetch_binary(fallback_session, fav_url, http_sem)
+                                fav_hash = favicon_hash(fav_bytes, "")
+                                
+                                target_tks = brand_tokens(domain, "")
+                                log_url = find_logo_url(final_url, html, target_tks)
+                                log_bytes = await fetch_binary(fallback_session, log_url, http_sem)
+                                log_hash = logo_hash(log_bytes)
+                                
+                                page_hash = await asyncio.to_thread(dom_hash, html)
+                                return domain, final_url, fav_hash, log_hash, page_hash
+
+                            except Exception as exc:
+                                log.debug("Playwright fallback failed for %s: %s", domain, exc)
+                                return None
+
+                    fallback_results = await asyncio.gather(*(process_fallback(domain) for domain in failed_domains))
+
+                    for res in fallback_results:
+                        if not res:
+                            continue
+                        domain, final_url, fav_hash, log_hash, page_hash = res
+                        for row_list in (favicon_rows, dom_rows, logo_rows):
+                            for row in row_list:
+                                if row["domain"] == domain:
+                                    row["final_url"] = final_url
+                        
+                        for row in favicon_rows:
+                            if row["domain"] == domain:
+                                row["favicon_hash"] = fav_hash
+                                row["status"] = "success" if fav_hash else "image_hash_failed"
+                        for row in dom_rows:
+                            if row["domain"] == domain:
+                                row["html_dom_hash"] = page_hash
+                                row["status"] = "success" if page_hash else "fetch_failed"
+                        for row in logo_rows:
+                            if row["domain"] == domain:
+                                row["logo_hash"] = log_hash
+                                row["status"] = "success" if log_hash else "image_hash_failed"
+                            
+                await browser.close()
+        except Exception as exc:
+            log.warning("Playwright not installed or failed to launch: %s", exc)
 
     write_csv(favicon_path, favicon_rows, ["domain", "favicon_hash", "hash_algorithm", "status", "final_url"])
     write_csv(dom_path, dom_rows, ["domain", "html_dom_hash", "hash_algorithm", "status", "final_url"])
