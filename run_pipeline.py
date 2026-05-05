@@ -737,6 +737,7 @@ def _load_hash_set(path: str) -> set[str]:
 def load_known_hashes() -> tuple[dict[str, set[str]], set[str], set[str]]:
     phish_favicons = _load_hash_set(os.path.join(DATA_DIR, "known_phish_favicon_hashes.txt"))
     phish_doms = _load_hash_set(os.path.join(DATA_DIR, "known_phish_dom_hashes.txt"))
+    brand_favicons = defaultdict(set)
     brand_path = os.path.join(DATA_DIR, "brand_favicon_hashes.csv")
     if os.path.exists(brand_path):
         with open(brand_path, "r", encoding="utf-8") as file:
